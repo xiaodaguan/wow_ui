@@ -1,0 +1,10 @@
+VER 3 0100000000000001 "1" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence [nochanneling]reset=4 眼镜蛇射击,眼镜蛇射击,眼镜蛇射击,眼镜蛇射击
+/use [target=豹] 误导
+/use [nochanneling]狂野怒火
+/use [nochanneling]夺命黑鸦
+/castsequence 13
+/castsequence 14
+/targetenemy [noharm][dead]
+END

@@ -1,0 +1,33 @@
+
+nPlatesDB = {
+	["ShowCurHP"] = true,
+	["AbrrevLongNames"] = true,
+	["ShowPercHP"] = true,
+	["ExecuteValue"] = 35,
+	["ShowEnemyClassColors"] = true,
+	["ShowHP"] = true,
+	["ShowTotemIcon"] = false,
+	["NameSize"] = 11,
+	["ExecuteColor"] = {
+		["b"] = 0.494117647058824,
+		["g"] = 0.27843137254902,
+		["r"] = 0,
+	},
+	["ShowServerName"] = true,
+	["ShowFullHP"] = true,
+	["ShowPvP"] = false,
+	["UseOffTankColor"] = false,
+	["ShowExecuteRange"] = false,
+	["OffTankColor"] = {
+		["b"] = 1,
+		["g"] = 0.2,
+		["r"] = 0.6,
+	},
+	["TankMode"] = false,
+	["HideFriendly"] = false,
+	["UseLargeNameFont"] = false,
+	["ColorNameByThreat"] = false,
+	["DontClamp"] = false,
+	["ShowFriendlyClassColors"] = true,
+	["ShowLevel"] = true,
+}

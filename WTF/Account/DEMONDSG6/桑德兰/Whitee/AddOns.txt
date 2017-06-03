@@ -1,0 +1,12 @@
+Carbonite: disabled
+ElvUI: enabled
+ElvUI_Config: enabled
+Ludwig_Data: enabled
+Ludwig: enabled
+oUF: enabled
+SimpleInterruptAnnounce: disabled
+DejaCharacterStats: disabled
+AddOnSkins: enabled
+ElvUI_Enhanced: enabled
+TidyPlates: disabled
+GS-Core: enabled

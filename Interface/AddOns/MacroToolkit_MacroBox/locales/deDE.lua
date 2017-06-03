@@ -1,0 +1,31 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("MacroBox", "deDE")
+
+if not L then return end
+
+L["%s on you!"] = "%s auf Dir!"
+L["All pet abilities"] = "Alle Pet F\195\164higkeiten"
+L["Author"] = "Autor"
+L["Banners"] = "Banner"
+L["Death Knight"] = "Todesritter"
+L["Druid"] = "Druide"
+L["Focus macro"] = "Fokus Makro"
+L["Hunter"] = "J\195\164ger"
+L["Macro commands"] = "Makro Befehle"
+L["Macro text"] = "Makro Text"
+L["Mage"] = "Magier"
+L["Max camera distance"] = "Max. Kamera Entfernung"
+L["Monk"] = "M\195\182nch"
+L["Mount name"] = "Reittier Name"
+L["Paladin"] = true
+L["Player name"] = "Spieler Name"
+L["Priest"] = "Priester"
+L["Profiles"] = "Profile"
+L["Pull with DBM warning"] = "Pull mit DBM Warnung"
+L["Pulling in 3 seconds"] = "Pull in 3 Sekunden"
+L["Requires Macro Toolkit"] = "Erfordert Macro Toolkit"
+L["Rogue"] = "Schurke"
+L["Run away!"] = "Lauf weg!"
+L["Shaman"] = "Schamane"
+L["Toggle screen mode"] = "Wechsle Anzeige Modus"
+L["Warlock"] = "Hexenmeister"
+L["Warrior"] = "Krieger"

@@ -1,0 +1,17 @@
+## Interface: 70000
+## Title: StatBlock_Durability
+## Notes: Durability Data Broker plugin.
+## Author: Funkydude
+## X-Category: Interface Enhancements
+## X-Credits: sb
+## X-Curse-Packaged-Version: r34-release
+## X-Curse-Project-Name: StatBlock_Durability
+## X-Curse-Project-ID: stat-block_durability
+## X-Curse-Repository-ID: wow/stat-block_durability/mainline
+
+LibStub.lua
+CallbackHandler-1.0.lua
+LibDataBroker-1.1.lua
+
+StatBlock_Durability.lua
+

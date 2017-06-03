@@ -1,0 +1,17 @@
+
+GrailDatabase = {
+	["learned"] = {
+		["NPC_LOCATION"] = {
+			"22996|zhCN|104220|1033:22.74,30.45", -- [1]
+		},
+		["QUEST"] = {
+			[44856] = "T:104220",
+		},
+	},
+	["BadQuestData"] = {
+		"G83|CN|22996|G[44856][reward]=", -- [1]
+		"G83|44856|1073741824", -- [2]
+	},
+	["delayEventsHandled"] = true,
+	["delayEvents"] = true,
+}

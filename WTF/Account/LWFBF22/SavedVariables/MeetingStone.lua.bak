@@ -1,0 +1,35 @@
+
+MEETINGSTONE_UI_DB = {
+	["profileKeys"] = {
+		["柒年 - 桑德兰"] = "Default",
+	},
+	["global"] = {
+		["spamWord"] = {
+			{
+				["text"] = "%d+元",
+			}, -- [1]
+			{
+				["text"] = "5173",
+				["pain"] = true,
+			}, -- [2]
+			{
+				["text"] = "tao.*bao",
+			}, -- [3]
+			{
+				["text"] = "平台",
+				["pain"] = true,
+			}, -- [4]
+			{
+				["text"] = "支.*付.*宝",
+			}, -- [5]
+			{
+				["text"] = "淘.*宝",
+			}, -- [6]
+			{
+				["text"] = "门票",
+				["pain"] = true,
+			}, -- [7]
+			["default"] = true,
+		},
+	},
+}

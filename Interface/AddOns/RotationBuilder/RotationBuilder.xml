@@ -1,0 +1,4437 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Templates -->
+	<Texture name="ROB_CheckBox-Disabled" file="Interface\Buttons\UI-CheckBox-Down" virtual="true">
+		<Color r="0.50" g="0.50" b="0.50" />
+	</Texture>
+	<CheckButton name="ROB_CheckButtonTemplate" inherits="UICheckButtonTemplate" virtual="true">
+		<DisabledTexture inherits="ROB_CheckBox-Disabled" />
+	</CheckButton>
+	<Button name="ROB_ColumnHeaderTemplateL1" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeft" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="4" y="16" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" />
+					</Anchors>
+					<TexCoords left="0" right="0.078125" top="0.1" bottom="0.75" />
+				</Texture>
+			</Layer>
+		</Layers>
+		<ButtonText name="$parentText">
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="4" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont style="GameFontHighlightSmall" />
+		<NormalTexture name="$parentArrow">
+			<Size>
+				<AbsDimension x="9" y="8" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentText" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="3" y="-2" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+			<TexCoords left="0" right="0.5625" top="0" bottom="1.0" />
+		</NormalTexture>
+		<HighlightTexture alphaMode="ADD">
+			<Size>
+				<AbsDimension x="0" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+				<Anchor point="RIGHT">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+
+	<Button name="ROB_ColumnHeaderTemplateL2" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeft" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="4" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" />
+					</Anchors>
+					<TexCoords left="0" right="0.078125" top="0.1" bottom="0.75" />
+				</Texture>
+				<Texture name="$parentMiddle" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="10" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT" />
+					</Anchors>
+					<TexCoords left="0.078125" right="0.90625" top="0.1" bottom="0.75" />
+				</Texture>
+			</Layer>
+		</Layers>
+		<ButtonText name="$parentText">
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="4" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont style="GameFontHighlightSmall" />
+		<NormalTexture name="$parentArrow">
+			<Size>
+				<AbsDimension x="9" y="8" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentText" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="3" y="-2" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+			<TexCoords left="0" right="0.5625" top="0" bottom="1.0" />
+		</NormalTexture>
+		<HighlightTexture alphaMode="ADD">
+			<Size>
+				<AbsDimension x="0" y="32" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+				<Anchor point="RIGHT">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+
+	<Button name="ROB_RotationListButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="230" y="16" />
+		</Size>
+		<Layers>
+			<Layer level="BORDER">
+				<FontString name="$parentName" inherits="GameFontHighlight" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="230" y="14" />
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="4" y="-2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnClick>ROB_RotationListButton_OnClick(self, button);</OnClick>
+		</Scripts>
+		<NormalFont style="GameFontNormalSmallLeft" />
+		<HighlightFont style="GameFontHighlightSmallLeft" />
+		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+			<Size>
+				<AbsDimension x="200" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOP">
+					<Offset>
+						<AbsDimension x="2" y="-2" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+
+	<Button name="ROB_ActionListButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="190" y="20" />
+		</Size>
+		<Frames>
+			<Button>
+				<Size>
+					<AbsDimension x="222" y="20" />
+				</Size>
+				<Layers>
+					<Layer level="BORDER">
+						<FontString name="$parentActionName" inherits="GameFontHighlight" justifyH="LEFT">
+							<Size>
+								<AbsDimension x="200" y="18" />
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+									<Offset>
+										<AbsDimension x="4" y="-2" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Button>
+			<Button name="$parentTrash" toplevel="true" frameStrata="HIGH">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentActionName" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="-25" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<HitRectInsets>
+					<AbsInset top="7" left="9" bottom="10" right="7" />
+				</HitRectInsets>
+				<Scripts>
+					<OnClick>ROB_ActionListTrash_OnClick(self);</OnClick>
+					<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+						GameTooltip:SetText(RotationBuilderUtils:localize('ROB_ACTION_REMOVE_TT'));
+					</OnEnter>
+					<OnLeave>GameTooltip:Hide();</OnLeave>
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\CancelButton-Up" />
+				<PushedTexture file="Interface\Buttons\CancelButton-Down" />
+				<HighlightTexture alphaMode="ADD" file="Interface\Buttons\CancelButton-Highlight" />
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>self:RegisterForClicks("LeftButtonUp", "RightButtonUp");</OnLoad>
+			<OnClick>ROB_ActionListButton_OnClick(self, button);</OnClick>
+			<OnLeave>ROB_ActionListButton_OnLeave(self);</OnLeave>
+		</Scripts>
+		<HighlightTexture alphaMode="ADD" file="Interface\QuestFrame\UI-QuestTitleHighlight">
+			<Size>
+				<AbsDimension x="190" y="20" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset>
+						<AbsDimension x="0" y="-2" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+
+	<!-- START UI STUFF -->
+	<Frame name="ROB_IconsFrame" frameStrata="ARTWORK" parent="UIParent" toplevel="true" enableMouse="true" movable="true">
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="UIParent"></Anchor>
+		</Anchors>
+		<Size x="64" y="64" />
+		<Scripts>
+			<OnLoad>self.TimeSinceLastUpdate = 0;</OnLoad>
+			<OnUpdate function="ROB_OnUpdate" />
+			<OnMouseDown>ROB_IconsFrameOnMouseDown(self, button);</OnMouseDown>
+			<OnMouseUp>ROB_IconsFrameOnMouseUp(self, button);</OnMouseUp>
+		</Scripts>
+		<Frames>
+			<Button name="ROB_CurrentActionButton" frameStrata="ARTWORK" inherits="ActionButtonTemplate" parent="ROB_IconsFrame" toplevel="true">
+				<Size>
+					<AbsDimension x="38" y="38" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="ROB_IconsFrame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="OVERLAY">
+						<Texture name="ROB_CurrentActionTint" file=""></Texture>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Cooldown name="$parentCooldown" inherits="CooldownFrameTemplate" />
+				</Frames>
+			</Button>
+			<Button name="ROB_NextActionButton" frameStrata="ARTWORK" inherits="ActionButtonTemplate" parent="ROB_IconsFrame" toplevel="true">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="ROB_CurrentActionButton" relativePoint="BOTTOM">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="OVERLAY">
+						<Texture name="ROB_NextActionTint" file=""></Texture>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Cooldown name="$parentCooldown" inherits="CooldownFrameTemplate" />
+				</Frames>
+			</Button>
+		</Frames>
+	</Frame>
+
+	<Frame name="ROB_Frame" frameStrata="HIGH" parent="UIParent" toplevel="true" movable="true" enableKeyboard="true" enableMouse="true" hidden="true">
+		<Size>
+			<AbsDimension x="780" y="740" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER">
+				<Offset>
+					<AbsDimension x="0" y="0" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16" />
+			</EdgeSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5" />
+			</BackgroundInsets>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="ROB_FrameTitleBar" file="Interface\TargetingFrame\UI-StatusBar">
+					<Size>
+						<AbsDimension x="784" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="4" y="-4" />
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT" relativeTo="ROB_Frame" relativePoint="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-4" y="-28" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<Color r=".38" g=".38" b=".38" a="1.0" />
+				</Texture>
+				<FontString name="ROB_FrameTitle" inherits="GameFontNormalLeft" nonspacewrap="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ROB_FrameTitleBar" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="4" y="-4" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+
+		<Frames>
+			<Button name="ROB_MiniMapButton" parent="Minimap" enableMouse="true" hidden="false" frameStrata="MEDIUM">
+				<Size>
+					<AbsDimension x="33" y="33" />
+				</Size>
+
+				<Anchors>
+					<Anchor point="CENTER" relativeTo="Minimap" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+
+				<Layers>
+					<Layer level="OVERLAY">
+						<Texture name="ROB_MiniMapButtonBorder" file="Interface\Minimap\MiniMap-TrackingBorder">
+							<Size>
+								<AbsDimension x="52" y="52" />
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT" />
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+
+				<Scripts>
+					<OnClick>ROB_OnToggle(self);</OnClick>
+					<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+						GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_TOGGLE'));
+					</OnEnter>
+					<OnLeave>GameTooltip:Hide();</OnLeave>
+				</Scripts>
+
+				<NormalTexture file="Interface\Icons\Spell_Arcane_PortalOrgrimmar">
+					<Size>
+						<AbsDimension x="16" y="16" />
+					</Size>
+
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ROB_MiniMapButtonBorder" x="7" y="-7" />
+					</Anchors>
+
+					<TexCoords left="0.09375" right="0.90625" top="0.09375" bottom="0.90625" />
+				</NormalTexture>
+
+				<PushedTexture file="Interface\Icons\Spell_Arcane_PortalOrgrimmar">
+					<Size>
+						<AbsDimension x="16" y="16" />
+					</Size>
+
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ROB_MiniMapButtonBorder" x="9" y="-9" />
+					</Anchors>
+
+					<TexCoords left="0.09375" right="0.90625" top="0.09375" bottom="0.90625" />
+				</PushedTexture>
+
+				<HighlightTexture alphaMode="ADD" file="Interface\MiniMap\UI-MiniMap-ZoomButton-Highlight" />
+			</Button>
+
+			<Button name="ROB_FrameClose">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+
+				<Anchors>
+					<Anchor point="CENTER" relativeTo="ROB_FrameTitleBar" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-12" y="-12" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+
+				<Scripts>
+					<OnClick>
+						ROB_Close_OnClick(self);
+					</OnClick>
+
+					<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+						GameTooltip:SetText(RotationBuilderUtils:localize('ROB_FRAME_CLOSE_TT'));
+					</OnEnter>
+
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+
+				<NormalTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Up" />
+				<PushedTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Down" />
+				<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD" />
+			</Button>
+
+
+			<Frame name="ROB_FrameVersionFrame">
+				<Size>
+					<AbsDimension x="120" y="20" />
+				</Size>
+
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="150" y="-12" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="ROB_FrameVersionFrameVersionLabel" inherits="GameFontDisableSmall" nonspacewrap="true">
+							<Anchors>
+								<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+									<Offset>
+										<AbsDimension x="0" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+
+						<FontString name="ROB_FrameVersionFrameVersion" inherits="GameFontDisableSmall" nonspacewrap="true">
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="ROB_FrameVersionFrameVersionLabel" relativePoint="TOPRIGHT">
+									<Offset>
+										<AbsDimension x="5" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>ROB_FrameVersionFrameVersionLabel:SetText(RotationBuilderUtils:localize('ROB_UI_VERSION_LABEL'));</OnLoad>
+				</Scripts>
+			</Frame>
+			<!-- Rotation Tab -->
+			<Frame name="ROB_RotationTab" hidden="true">
+				<Size>
+					<AbsDimension x="284" y="350" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-24" />
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativeTo="ROB_Frame" relativePoint="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Button name="ROB_RotationListColumnHeader" inherits="ROB_ColumnHeaderTemplateL1">
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_RCOLUMNHEADER'));</OnLoad>
+						</Scripts>
+						<Size>
+							<AbsDimension x="200" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_FrameTitleBar" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="5" y="-30" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<ScrollFrame name="ROB_RotationScrollFrame" inherits="FauxScrollFrameTemplate">
+						<Size>
+							<AbsDimension x="225" y="153" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationListColumnHeader" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="-5" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnVerticalScroll>
+								FauxScrollFrame_OnVerticalScroll(self, offset,ROB_ROTATION_LIST_FRAME_HEIGHT, ROB_RotationList_Update);
+							</OnVerticalScroll>
+						</Scripts>
+					</ScrollFrame>
+					<Frame name="ROB_RotationScrollFrameBackground">
+						<Size>
+							<AbsDimension x="250" y="180" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationListColumnHeader">
+								<Offset>
+									<AbsDimension x="-4" y="4" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16" />
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+								self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+					</Frame>
+
+					<Button name="ROB_RotationListButton1" inherits="ROB_RotationListButtonTemplate" id="1">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListColumnHeader">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton2" inherits="ROB_RotationListButtonTemplate" id="2">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton1">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton3" inherits="ROB_RotationListButtonTemplate" id="3">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton2">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton4" inherits="ROB_RotationListButtonTemplate" id="4">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton3">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton5" inherits="ROB_RotationListButtonTemplate" id="5">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton4">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton6" inherits="ROB_RotationListButtonTemplate" id="6">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton5">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton7" inherits="ROB_RotationListButtonTemplate" id="7">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton6">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton8" inherits="ROB_RotationListButtonTemplate" id="8">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton7">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationListButton9" inherits="ROB_RotationListButtonTemplate" id="9">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_RotationListButton8">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_RotationCreateButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationScrollFrameBackground" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="65" y="-5" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_CREATE'));</OnLoad>
+							<OnClick>ROB_RotationCreateButton_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_CREATE_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationListModifyButton" inherits="UIPanelButtonTemplate" hidden="false" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationCreateButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_MODIFY'));</OnLoad>
+							<OnClick>ROB_ModifyRotationButton_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_MODIFY_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationSaveButton" inherits="UIPanelButtonTemplate" hidden="true" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationCreateButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_SAVE'));</OnLoad>
+							<OnClick>ROB_Save_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_SAVE_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationDiscardButton" inherits="UIPanelButtonTemplate" hidden="true" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationSaveButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_DISCARD'));</OnLoad>
+							<OnClick>ROB_Discard_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_DISCARD_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationListDeleteButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationListModifyButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_DELETE'));</OnLoad>
+							<OnClick>ROB_RotationListDeleteButton_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_DELETE_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationImportButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="HIGH">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationScrollFrameBackground" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_IMPORT'));</OnLoad>
+							<OnClick>ROB_RotationImportButton_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_IMPORT_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_RotationExportButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="HIGH">
+						<Size>
+							<AbsDimension x="62" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationImportButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="-2" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_EXPORT'));</OnLoad>
+							<OnClick>ROB_RotationExportButton_OnClick(self);</OnClick>
+							<OnEnter>
+								GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+								GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_EXPORT_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+
+					<!-- USE ListColumnHeader1 to move whole action list block -->
+					<Button name="ROB_ActionNamesListColumnHeader1" inherits="ROB_ColumnHeaderTemplateL2">
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_ACTION_COLUMN'));</OnLoad>
+						</Scripts>
+						<Size>
+							<AbsDimension x="200" y="32" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="10" y="-259" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<ScrollFrame name="ROB_ActionListScrollFrame" inherits="FauxScrollFrameTemplate">
+						<Size>
+							<AbsDimension x="220" y="440" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_ActionNamesListColumnHeader1" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnVerticalScroll>
+								FauxScrollFrame_OnVerticalScroll(self, offset, ROB_ACTION_LIST_FRAME_HEIGHT, ROB_ActionList_Update);
+							</OnVerticalScroll>
+						</Scripts>
+					</ScrollFrame>
+					<Frame name="ROB_ActionListScrollFrameBackground">
+						<Size>
+							<AbsDimension x="250" y="480" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_ActionNamesListColumnHeader1">
+								<Offset>
+									<AbsDimension x="-4" y="4" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<TileSize>
+								<AbsValue val="16" />
+							</TileSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+								self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+					</Frame>
+					<Button name="ROB_ActionListButton1" inherits="ROB_ActionListButtonTemplate" id="1">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionNamesListColumnHeader1">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton2" inherits="ROB_ActionListButtonTemplate" id="2">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton1">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton3" inherits="ROB_ActionListButtonTemplate" id="3">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton2">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton4" inherits="ROB_ActionListButtonTemplate" id="4">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton3">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton5" inherits="ROB_ActionListButtonTemplate" id="5">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton4">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton6" inherits="ROB_ActionListButtonTemplate" id="6">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton5">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton7" inherits="ROB_ActionListButtonTemplate" id="7">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton6">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton8" inherits="ROB_ActionListButtonTemplate" id="8">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton7">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton9" inherits="ROB_ActionListButtonTemplate" id="9">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton8">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton10" inherits="ROB_ActionListButtonTemplate" id="10">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton9">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton11" inherits="ROB_ActionListButtonTemplate" id="11">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton10">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton12" inherits="ROB_ActionListButtonTemplate" id="12">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton11">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton13" inherits="ROB_ActionListButtonTemplate" id="13">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton12">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton14" inherits="ROB_ActionListButtonTemplate" id="14">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton13">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton15" inherits="ROB_ActionListButtonTemplate" id="15">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton14">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton16" inherits="ROB_ActionListButtonTemplate" id="16">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton15">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton17" inherits="ROB_ActionListButtonTemplate" id="17">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton16">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton18" inherits="ROB_ActionListButtonTemplate" id="18">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton17">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton19" inherits="ROB_ActionListButtonTemplate" id="19">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton18">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton20" inherits="ROB_ActionListButtonTemplate" id="20">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton19">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListButton21" inherits="ROB_ActionListButtonTemplate" id="21">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="ROB_ActionListButton20">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</Button>
+					<Button name="ROB_ActionListMoveUpButton" frameStrata="HIGH">
+						<Size>
+							<AbsDimension x="24" y="24" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="ROB_ActionListScrollFrameScrollBarScrollUpButton" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="2" y="4" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>ROB_Lists_Edit_MoveUp(self);</OnClick>
+							<OnEnter>GameTooltip:SetOwner(self,
+								"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_ACTION_MOVEUP_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+						<NormalTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollUp-Up" />
+						<PushedTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollUp-Down" />
+						<DisabledTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollUp-Disabled" />
+						<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD" />
+					</Button>
+					<Button name="ROB_ActionListMoveDownButton" frameStrata="HIGH">
+						<Size>
+							<AbsDimension x="24" y="24" />
+						</Size>
+						<Anchors>
+							<Anchor point="BOTTOMRIGHT" relativeTo="ROB_ActionListScrollFrameScrollBarScrollDownButton" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="2" y="-4" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnClick>ROB_Lists_Edit_MoveDown(self);</OnClick>
+							<OnEnter>GameTooltip:SetOwner(self,
+								"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_ACTION_MOVEDOWN_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+						<NormalTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Up" />
+						<PushedTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Down" />
+						<DisabledTexture file="Interface\ChatFrame\UI-ChatIcon-ScrollDown-Disabled" />
+						<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD" />
+					</Button>
+
+					<EditBox name="ROB_RotationNameInputBox" inherits="InputBoxTemplate" autoFocus="false">
+						<Size>
+							<AbsDimension x="255" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="260" y="-50" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_RotationNameLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="20" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnLoad>ROB_RotationNameLabel:SetText(RotationBuilderUtils:localize('ROB_UI_RN_LABEL'));</OnLoad>
+							<OnTextChanged>ROB_RotationNameInputBox_OnTextChanged(self);</OnTextChanged>
+						</Scripts>
+					</EditBox>
+					<Frame name="ROB_RotationNameRO" hidden="true">
+						<Size>
+							<AbsDimension x="255" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="260" y="-50" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_RotationNameROLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="20" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+								<FontString name="ROB_RotationNameROText" inherits="ChatFontNormal" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="0" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnLoad>ROB_RotationNameROLabel:SetText(RotationBuilderUtils:localize('ROB_UI_RN_LABEL'));</OnLoad>
+						</Scripts>
+					</Frame>
+					<EditBox name="ROB_RotationSpecInputBox" inherits="InputBoxTemplate" autoFocus="false">
+						<Size>
+							<AbsDimension x="30" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="260" y="-90" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_RotationSpecLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="20" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnLoad>ROB_RotationSpecLabel:SetText(RotationBuilderUtils:localize('ROB_UI_RS_LABEL'));</OnLoad>
+							<OnTextChanged>ROB_RotationSpecInputBox_OnTextChanged(self);</OnTextChanged>
+						</Scripts>
+					</EditBox>
+					<Frame name="ROB_RotationSpecRO" hidden="true">
+						<Size>
+							<AbsDimension x="255" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="260" y="-90" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_RotationSpecROLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="20" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+								<FontString name="ROB_RotationSpecROText" inherits="ChatFontNormal" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativePoint="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="0" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnLoad>ROB_RotationSpecROLabel:SetText(RotationBuilderUtils:localize('ROB_UI_RS_LABEL'));</OnLoad>
+						</Scripts>
+					</Frame>
+					<CheckButton name="ROB_RotationMultiTargetCheckbox" inherits="ROB_CheckButtonTemplate">
+						<Size>
+							<AbsDimension x="20" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_RotationTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="260" y="-130" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>ROB_RotationMultiTargetCheckboxText:SetText(RotationBuilderUtils:localize('ui/rotations/toggleMultiTarget/text'))</OnLoad>
+							<OnClick>ROB_RotationMultiTargetCheckbox_OnToggle(self);</OnClick>
+						</Scripts>
+					</CheckButton>
+					<Button name="ROB_AddActionButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="55" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_ActionNamesListColumnHeader1" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="75" y="-5" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_A_ADD'));</OnLoad>
+							<OnClick>ROB_AddActionButton_OnClick(self);</OnClick>
+							<OnEnter>GameTooltip:SetOwner(self,
+								"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_A_ADD_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_CopyActionButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="55" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_AddActionButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_A_COPY'));</OnLoad>
+							<OnClick>ROB_CopyActionButton_OnClick(self);</OnClick>
+							<OnEnter>GameTooltip:SetOwner(self,
+								"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_A_COPY_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+					<Button name="ROB_PasteActionButton" inherits="UIPanelButtonTemplate" toplevel="true" frameStrata="DIALOG">
+						<Size>
+							<AbsDimension x="55" y="20" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_CopyActionButton" relativePoint="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="0" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_A_PASTE'));</OnLoad>
+							<OnClick>ROB_PasteActionButton_OnClick(self);</OnClick>
+							<OnEnter>GameTooltip:SetOwner(self,
+								"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_A_PASTE_TT'));
+							</OnEnter>
+							<OnLeave>GameTooltip:Hide();</OnLeave>
+						</Scripts>
+					</Button>
+
+
+					<!-- ADD_OPTIONS_BELOW_THIS_LINE -->
+
+					<!-- GENERAL TAB -->
+					<Frame name="ROB_GeneralActionOptionsTab" toplevel="false" hidden="true">
+						<Size>
+							<AbsDimension x="520" y="480" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="255" y="-255" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_GeneralOptionsLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+											<Offset>
+												<AbsDimension x="9" y="-12" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>
+								ROB_GeneralOptionsLabel:SetText(RotationBuilderUtils:localize('ROB_UI_AO_GENERAL_LABEL'));
+								self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g,
+								TOOLTIP_DEFAULT_COLOR.b);self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+						<Frames>
+							<EditBox name="ROB_SpellNameInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="150" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="170" y="-20" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString name="$parentLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+											<Scripts>
+												<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_SPELLNAME_L'));</OnLoad>
+											</Scripts>
+											<Anchors>
+												<Anchor point="RIGHT" relativePoint="LEFT">
+													<Offset>
+														<AbsDimension x="-5" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+										<Texture name="$parentIcon" file="Interface\RAIDFRAME\ReadyCheck-NotReady">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPRIGHT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+											<Size>
+												<AbsDimension x="20" y="20" />
+											</Size>
+										</Texture>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_SpellNameInputBoxLabel:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_SPELLNAME_L'));</OnLoad>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_SPELLNAME_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_spellname",true)
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<Frame name="ROB_SpellNameValidate">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_SpellNameInputBoxIcon" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="0" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString name="$parentText" inherits="GameFontNormalSmall" text="" justifyH="LEFT" justifyV="TOP">
+											<Anchors>
+												<Anchor point="LEFT" relativeTo="ROB_SpellNameInputBoxIcon" relativePoint="RIGHT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");ROB_SpellValidate(ROB_SpellNameInputBox:GetText());
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</Frame>
+							<EditBox name="ROB_AO_ActionIconInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="150" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="170" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString name="ROB_AO_ActionIconInputBoxLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+											<Anchors>
+												<Anchor point="RIGHT" relativePoint="LEFT">
+													<Offset>
+														<AbsDimension x="-5" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_AO_ActionIconInputBoxLabel:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_ICON_L'));</OnLoad>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_ICON_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_ActionIcon_OnTextChanged(self,"v_actionicon")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<Frame name="ROB_AO_ActionIconTextureFrame">
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="320" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Layers>
+									<Layer level="ARTWORK">
+										<Texture name="ROB_AO_ActionIconTexture" file=""></Texture>
+									</Layer>
+								</Layers>
+							</Frame>
+
+							<CheckButton name="ROB_AO_DebugCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="460" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_DebugCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DEBUG'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_debug");</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DEBUG_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_DisableCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="460" y="-60" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_DisableCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DISABLE'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_disabled");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DISABLE_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_DurationCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-80" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_DurationCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DURATION'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_duration");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DURATION_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_DurationInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="50" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="170" y="-80" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_DURATIONIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_duration")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_IsCustomCase1" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="350" y="-80" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_IsCustomCase1Text:SetText(RotationBuilderUtils:localize('ui/spells/general/isCustomCase/text')..1);</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_isCustomCase1");</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self,"ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/spells/general/isCustomCase/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_MaxCastsCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-100" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_MaxCastsCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_MAXCASTS'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_maxcasts");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_MAXCASTS_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_MaxCastsInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="170" y="-100" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_MAXCASTSIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_maxcasts")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_NotCustomCase1" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="350" y="-100" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NotCustomCase1Text:SetText(RotationBuilderUtils:localize('ui/spells/general/notCustomCase/text')..1);</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notCustomCase1");</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self,"ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/spells/general/notCustomCase/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_CheckOtherCDCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-120" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_CheckOtherCDCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCD'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_checkothercd");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCD_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_CheckOtherCDNameInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="95" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_CheckOtherCDCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCDNIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_checkothercdname")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_CheckOtherCDValueInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="50" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_CheckOtherCDCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="245" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCDVIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_checkothercdvalue")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_IsCustomCase2" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="350" y="-120" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_IsCustomCase2Text:SetText(RotationBuilderUtils:localize('ui/spells/general/isCustomCase/text')..2);</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_isCustomCase2");</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self,"ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/spells/general/isCustomCase/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_CheckOtherCD2CheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-140" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_CheckOtherCD2CheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCD'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_checkothercd2");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCD_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_CheckOtherCD2NameInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="95" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_CheckOtherCD2CheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCDNIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_checkothercd2name")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_CheckOtherCD2ValueInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="50" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_CheckOtherCD2CheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="245" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCDVIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_checkothercd2value")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_NotCustomCase2" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="350" y="-140" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NotCustomCase2Text:SetText(RotationBuilderUtils:localize('ui/spells/general/notCustomCase/text')..2);</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notCustomCase2");</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self,"ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/spells/general/notCustomCase/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_LastCastedCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-160" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_LastCastedCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_LASTCAST'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_lastcasted");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_LASTCAST_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_LastCastedInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="150" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_LastCastedCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_LASTCASTIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_lastcasted")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_GSpellCostCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-180" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GSpellCostCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GSPELLCOST'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_gspellcost");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GSPELLCOST_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_GSpellCostTypeInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GSpellCostCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GSPELLCOST1_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_gspellcosttype")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_GSpellCostInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GSpellCostCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="190" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GSPELLCOST2_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_gspellcost")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_GUnitPowerCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-200" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GUnitPowerCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GUNITPOWER'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_gunitpower");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GUNITPOWER_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_GUnitPowerTypeInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GUnitPowerCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GUNITPOWER1_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_gunitpowertype")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_GUnitPowerInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GUnitPowerCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="190" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_GUNITPOWER2_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_gunitpower")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_GChargesCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-220" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GChargesCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_CHARGES'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_charges");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_CHARGES_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_GChargesInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GChargesCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_CHARGESIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_charges")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_GOtherChargesCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-240" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GOtherChargesCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCHARGES'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_othercharges");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCHARGES_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_GOtherChargesNameInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="95" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GOtherChargesCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_OTHERCHARGESNIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_otherchargesname")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_GOtherChargesInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="50" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_GOtherChargesCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="245" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_CHARGESIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_othercharges")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_GHasProcCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-260" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GHasProcCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_HASPROC'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_hasproc");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_HASPROC_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_NotASpellCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-280" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NotASpellCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTSPELL'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notaspell");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTSPELL_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_GNotInSpellbookCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-300" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GNotInSpellbookCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTINSPELLBOOK'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notinspellbook");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTINSPELLBOOK_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_GInCombatCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-320" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GInCombatCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_INCOMBAT'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_incombat");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_INCOMBAT_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_GNotInCombatCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-340" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_GNotInCombatCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTINCOMBAT'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notincombat");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NOTINCOMBAT_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_G_SpellInRangeCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-360" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_G_SpellInRangeCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_AO_G_SpellInRangeCheckButton'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_spellInRange");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_AO_G_SpellInRangeCheckButton_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_G_HasMinRangeCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_G_SpellInRangeCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="145" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_G_HasMinRangeCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_AO_G_HasMinRangeCheckButton'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_hasMinRange");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_AO_G_HasMinRangeCheckButton_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+						</Frames>
+					</Frame>
+
+					<!-- PLAYER TAB -->
+					<Frame name="ROB_PlayerActionOptionsTab">
+						<Size>
+							<AbsDimension x="520" y="480" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="255" y="-255" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_PlayerOptionsLabel" inherits="GameFontNormalSmall" text="Player Options:" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+											<Offset>
+												<AbsDimension x="9" y="-12" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r,
+								TOOLTIP_DEFAULT_COLOR.g,
+								TOOLTIP_DEFAULT_COLOR.b);self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.g,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+						<Frames>
+							<CheckButton name="ROB_AO_PlayerHPCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-20" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_PlayerHPCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HP'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_hp");</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HP_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_PlayerHPInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_PlayerHPCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HPIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_hp")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_NeedBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NeedBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_needbuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_NeedBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_NeedBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_needbuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_HaveBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-60" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_HaveBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_havebuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_HaveBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_HaveBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_havebuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_NeedDebuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-80" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NeedDebuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDDB'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_needdebuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDDB_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_NeedDebuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_NeedDebuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_NEEDDBIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_needdebuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_HaveDebuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-100" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_HaveDebuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEDB'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_havedebuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEDB_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_HaveDebuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_HaveDebuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HAVEDBIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_havedebuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_UnitPowerCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-120" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_UnitPowerCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_unitpower");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_UnitPowerTypeInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_UnitPowerCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER1_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_unitpowertype")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_UnitPowerInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_UnitPowerCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="160" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER2_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_unitpower")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_UnitPower2CheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-140" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_UnitPower2CheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER2'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_unitpower2");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_UnitPower2TypeInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_UnitPower2CheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER1_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_unitpower2type")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_AO_UnitPower2InputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_UnitPower2CheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="160" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_POWER2_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_unitpower2")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_RunesCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-160" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_RunesCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_RUNES'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_runes");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_RUNES_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_RunesInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_RunesCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_RUNESIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_runes")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_KnowSpellCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-180" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_KnowSpellCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWSPELL'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_knowspell");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWSPELL_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_KnowSpellInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_KnowSpellCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="105" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWSPELLIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_knowspell")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_KnowNotSpellCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-200" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_KnowNotSpellCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWNOTSPELL'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_knownotspell");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWNOTSPELL_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_KnowNotSpellInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_KnowNotSpellCheckButton" relativePoint="TOPRIGHT">
+										<Offset>
+											<AbsDimension x="105" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_KNOWNOTSPELLIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_p_knownotspell")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_MovingCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-220" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_MovingCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_MOVING'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_moving");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_MOVING_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_NMovingCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-240" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_NMovingCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NMOVING'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_notmoving");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_G_NMOVING_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_IsStealthedCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PlayerActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-260" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_IsStealthedCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_ISSTEALTHED'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_p_isstealthed");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_ISSTEALTHED_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+						</Frames>
+					</Frame>
+
+					<!-- TARGET TAB -->
+					<Frame name="ROB_TargetActionOptionsTab">
+						<Size>
+							<AbsDimension x="520" y="480" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="255" y="-255" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_TargetOptionsLabel" inherits="GameFontNormalSmall" text="Target Options:" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+											<Offset>
+												<AbsDimension x="9" y="-12" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r,
+								TOOLTIP_DEFAULT_COLOR.g,
+								TOOLTIP_DEFAULT_COLOR.b);self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.g,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+						<Frames>
+							<CheckButton name="ROB_AO_TargetHPCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-20" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetHPCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HP'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_hp");</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HP_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_TargetHPInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_TargetHPCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HPIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_t_hp")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_TargetNeedsBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetNeedsBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_needsbuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_TargetNeedsBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_TargetNeedsBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_t_needsbuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_TargetHasBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-60" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetHasBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_hasbuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_TargetHasBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_TargetHasBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_t_hasbuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_TargetNeedsDebuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-80" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetNeedsDebuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDDB'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_needsdebuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDDB_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_TargetNeedsDebuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_TargetNeedsDebuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NEEDDBIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_t_needsdebuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_TargetHasDebuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-100" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetHasDebuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEDB'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_hasdebuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEDB_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_TargetHasDebuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_TargetHasDebuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_HAVEDBIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_t_hasdebuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_TargetBossCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-120" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetBossCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_BOSS'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_boss");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_BOSS_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_TargetNotABossCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_TargetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-140" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetNotABossCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NOTABOSS'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_notaboss");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_NOTABOSS_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_TargetInterruptCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-160" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetInterruptCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_INTERRUPT'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_interrupt");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_INTERRUPT_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_TargetDispelCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-180" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetDispelCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_DISPEL'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_dispel");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_DISPEL_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_AO_TargetSpellstealCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_GeneralActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-200" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_TargetSpellstealCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_SPELLSTEAL'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_t_spellsteal");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_T_SPELLSTEAL_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+						</Frames>
+					</Frame>
+
+					<!-- PET TAB -->
+					<Frame name="ROB_PetActionOptionsTab">
+						<Size>
+							<AbsDimension x="520" y="480" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="255" y="-255" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="ROB_PetOptionsLabel" inherits="GameFontNormalSmall" text="Pet Options:" justifyH="LEFT" justifyV="TOP">
+									<Anchors>
+										<Anchor point="LEFT" relativeTo="ROB_PetActionOptionsTab" relativePoint="TOPLEFT">
+											<Offset>
+												<AbsDimension x="9" y="-12" />
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+							<EdgeSize>
+								<AbsValue val="16" />
+							</EdgeSize>
+							<BackgroundInsets>
+								<AbsInset left="5" right="5" top="5" bottom="5" />
+							</BackgroundInsets>
+						</Backdrop>
+						<Scripts>
+							<OnLoad>self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r,
+								TOOLTIP_DEFAULT_COLOR.g,
+								TOOLTIP_DEFAULT_COLOR.b);self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.g,
+								TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+							</OnLoad>
+						</Scripts>
+						<Frames>
+							<CheckButton name="ROB_AO_PetHPCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-20" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_PetHPCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_P_HP'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_pet_hp");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_HP_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_PetHPInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="100" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_PetHPCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_HPIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_pet_hp")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_PetNeedsBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_PetNeedsBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_NEEDBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_pet_needsbuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_NEEDBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_PetNeedsBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_PetNeedsBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_NEEDBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_pet_needsbuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<CheckButton name="ROB_AO_PetHasBuffCheckButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_PetActionOptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-60" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_AO_PetHasBuffCheckButtonText:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_HAVEBUFF'))
+									</OnLoad>
+									<OnClick>ROB_AO_CheckButton_OnToggle(self,"b_pet_hasbuff");
+									</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_HAVEBUFF_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_AO_PetHasBuffInputBox" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="385" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_AO_PetHasBuffCheckButton" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="125" y="0" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_HAVEBUFFIB_TT'));
+									</OnEnter>
+									<OnTextChanged>ROB_AO_InputBox_OnTextChanged(self,"v_pet_hasbuff")
+									</OnTextChanged>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+						</Frames>
+					</Frame>
+
+					<!-- Action Options Tab Buttons -->
+					<Button name="$parentTab1" inherits="OptionsFrameTabButtonTemplate" id="1" hidden="true">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="250" y="-207" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_AO_GENERAL_TAB'));</OnLoad>
+							<OnClick>ROB_ActionOptionsSwitchToTab(self);</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentTab2" inherits="OptionsFrameTabButtonTemplate" id="2" hidden="true">
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="-10" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PLAYER_TAB'));</OnLoad>
+							<OnClick>ROB_ActionOptionsSwitchToTab(self);</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentTab3" inherits="OptionsFrameTabButtonTemplate" id="3" hidden="true">
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="-10" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_AO_TARGET_TAB'));</OnLoad>
+							<OnClick>ROB_ActionOptionsSwitchToTab(self);</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentTab4" inherits="OptionsFrameTabButtonTemplate" id="4" hidden="true">
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parentTab3" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="-10" y="0" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_AO_PET_TAB'));</OnLoad>
+							<OnClick>ROB_ActionOptionsSwitchToTab(self);</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+			</Frame>
+
+			<!-- Options Tab -->
+			<Frame name="ROB_OptionsTab" hidden="true">
+				<Size>
+					<AbsDimension x="784" y="350" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="ROB_Frame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-24" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+
+				<Frames>
+					<!-- UI Management -->
+					<Frame name="ROB_OptionsTabUIManageFrame">
+						<Size>
+							<AbsDimension x="712" y="110" />
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTab" relativePoint="TOPLEFT">
+								<Offset>
+									<AbsDimension x="10" y="-50" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Frames>
+							<Frame name="ROB_OptionsTabMinimapOptionsFrame">
+								<Size>
+									<AbsDimension x="765" y="100" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="10" y="-50" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+									<Color a=".5" r="0" g="0" b="0" />
+									<EdgeSize>
+										<AbsValue val="16" />
+									</EdgeSize>
+									<BackgroundInsets>
+										<AbsInset left="5" right="5" top="5" bottom="5" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabMinimapOptionsFrameFT" inherits="GameFontNormal" nonspacewrap="true">
+											<Anchors>
+												<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabMinimapOptionsFrameFT:SetText(RotationBuilderUtils:localize('ROB_OPTION_MINIMAPO'));</OnLoad>
+								</Scripts>
+							</Frame>
+
+							<CheckButton name="ROB_OptionsTabMiniMapButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabMinimapOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-5" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabMiniMapButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_MINIMAP'))
+									</OnLoad>
+									<OnClick>ROB_Option_MiniMapButton_OnToggle(self);</OnClick>
+									<OnEnter>GameTooltip:SetOwner(self,
+										"ANCHOR_TOPLEFT");GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_MINIMAP_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+
+							<Slider name="ROB_OptionsTabMiniMapPosSlider" orientation="HORIZONTAL" minValue="1" maxValue="360" valueStep="1">
+								<Size>
+									<AbsDimension x="180" y="16" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabMinimapOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="150" y="-15" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+									<EdgeSize>
+										<AbsValue val="8" />
+									</EdgeSize>
+									<TileSize>
+										<AbsValue val="8" />
+									</TileSize>
+									<BackgroundInsets>
+										<AbsInset left="3" right="3" top="6" bottom="6" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabMiniMapPosSliderTextT" inherits="GameFontNormalSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="TOP" y="8"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapPosSliderText" inherits="GameFontGreenSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOM"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapPosSliderTextBL" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMLEFT"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapPosSliderTextBR" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMRIGHT"></Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										ROB_OptionsTabMiniMapPosSliderTextT:SetText(RotationBuilderUtils:localize('ROB_OPTION_MINIMAPPOS'));
+										ROB_OptionsTabMiniMapPosSliderText:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMPOS_CV'));
+										ROB_OptionsTabMiniMapPosSliderTextBL:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMPOS_MIN'));
+										ROB_OptionsTabMiniMapPosSliderTextBR:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMPOS_MAX'));
+									</OnLoad>
+									<OnValueChanged>ROB_Option_MiniMapButtonPos_OnValueChanged(self);</OnValueChanged>
+								</Scripts>
+								<ThumbTexture file="Interface\Buttons\UI-SliderBar-Button-Vertical">
+									<Size>
+										<AbsDimension x="32" y="32" />
+									</Size>
+								</ThumbTexture>
+							</Slider>
+							<Slider name="ROB_OptionsTabMiniMapRadSlider" orientation="HORIZONTAL" minValue="80" maxValue="120" valueStep="1">
+								<Size>
+									<AbsDimension x="180" y="16" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabMinimapOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="150" y="-65" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+									<EdgeSize>
+										<AbsValue val="8" />
+									</EdgeSize>
+									<TileSize>
+										<AbsValue val="8" />
+									</TileSize>
+									<BackgroundInsets>
+										<AbsInset left="3" right="3" top="6" bottom="6" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabMiniMapRadSliderTextT" inherits="GameFontNormalSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="TOP" y="8">
+												</Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapRadSliderText" inherits="GameFontGreenSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOM">
+												</Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapRadSliderTextBL" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMLEFT">
+												</Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabMiniMapRadSliderTextBR" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMRIGHT">
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+
+								<Scripts>
+									<OnLoad>
+										ROB_OptionsTabMiniMapRadSliderTextT:SetText(RotationBuilderUtils:localize('ROB_OPTION_MINIMAPRAD'));
+										ROB_OptionsTabMiniMapRadSliderText:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMRAD_MIN'));
+										ROB_OptionsTabMiniMapRadSliderTextBL:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMRAD_CV'));
+										ROB_OptionsTabMiniMapRadSliderTextBR:SetText(RotationBuilderUtils:localize('ROB_OPTION_MMRAD_MAX'));
+									</OnLoad>
+									<OnValueChanged>
+										ROB_Option_MiniMapButtonRad_OnValueChanged(self);
+									</OnValueChanged>
+								</Scripts>
+
+								<ThumbTexture file="Interface\Buttons\UI-SliderBar-Button-Vertical">
+									<Size>
+										<AbsDimension x="32" y="32" />
+									</Size>
+								</ThumbTexture>
+							</Slider>
+							<Frame name="ROB_OptionsTabIconOptionsFrame">
+								<Size>
+									<AbsDimension x="765" y="100" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="10" y="-160" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+									<Color a=".5" r="0" g="0" b="0" />
+									<EdgeSize>
+										<AbsValue val="16" />
+									</EdgeSize>
+									<BackgroundInsets>
+										<AbsInset left="5" right="5" top="5" bottom="5" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabIconOptionsFrameLabel" inherits="GameFontNormal" nonspacewrap="true">
+											<Anchors>
+												<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabIconOptionsFrameLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS'));</OnLoad>
+								</Scripts>
+							</Frame>
+							<CheckButton name="ROB_OptionsTabLockIconsButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-5" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabLockIconsButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_LOCKICONS'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabLockIconsButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_LOCKICONS_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_OptionsTabHideCooldownsButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-25" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabHideCooldownsButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_HIDECD'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabHideCooldownsButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_HIDECD_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_OptionsTabEnemyButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-45" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabEnemyButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_ENEMY'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabEnemyButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_ENEMY_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<Button name="ROB_OptionsNextActionLocationDropDownButton" inherits="UIDropDownMenuTemplate" id="1">
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="150" y="-60" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsNextActionLocationDropDownButtonLabel" inherits="GameFontNormal" nonspacewrap="true">
+											<Anchors>
+												<Anchor point="RIGHT" relativePoint="LEFT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										ROB_OptionsNextActionLocationDropDownButtonLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_NAIL'));
+										UIDropDownMenu_Initialize(self,ROB_OptionsNextActionLocationDropDownButton_OnLoad)
+									</OnLoad>
+									<OnClick>
+										ToggleDropDownMenu(1, nil, ROB_OptionsNextActionLocationDropDownButton, ROB_OptionsNextActionLocationDropDownButton, 0, 0);
+									</OnClick>
+								</Scripts>
+							</Button>
+							<Slider name="ROB_OptionsTabIconScaleSlider" orientation="HORIZONTAL" minValue=".5" maxValue="3.5" valueStep=".1">
+								<Size>
+									<AbsDimension x="180" y="16" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="150" y="-15" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+									<EdgeSize>
+										<AbsValue val="8" />
+									</EdgeSize>
+									<TileSize>
+										<AbsValue val="8" />
+									</TileSize>
+									<BackgroundInsets>
+										<AbsInset left="3" right="3" top="6" bottom="6" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabIconScaleSliderTextT" inherits="GameFontNormalSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="TOP" y="8"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabIconScaleSliderText" inherits="GameFontGreenSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOM"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabIconScaleSliderTextBL" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMLEFT"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabIconScaleSliderTextBR" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMRIGHT"></Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										ROB_OptionsTabIconScaleSliderTextT:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONSCALE'));
+										ROB_OptionsTabIconScaleSliderText:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_CV'));
+										ROB_OptionsTabIconScaleSliderTextBL:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_MIN'));
+										ROB_OptionsTabIconScaleSliderTextBR:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_MAX'));
+									</OnLoad>
+									<OnValueChanged>ROB_Option_IconScale_OnValueChanged(self);</OnValueChanged>
+								</Scripts>
+								<ThumbTexture file="Interface\Buttons\UI-SliderBar-Button-Vertical">
+									<Size>
+										<AbsDimension x="32" y="32" />
+									</Size>
+								</ThumbTexture>
+							</Slider>
+							<CheckButton name="ROB_OptionsTabDisplayOnDeadTargetButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="520" y="-5" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabDisplayOnDeadTargetButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_DISPLAY_ON_DEAD_TARGET'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabDisplayOnDeadTargetButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_DISPLAY_ON_DEAD_TARGET_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<EditBox name="ROB_OptionsTabCurrentIconAlpha" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="520" y="-25" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString name="ROB_OptionsTabCurrentIconAlphaLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+											<Anchors>
+												<Anchor point="RIGhT" relativePoint="LEFT">
+													<Offset>
+														<AbsDimension x="-5" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabCurrentIconAlphaLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_C_A'));</OnLoad>
+									<OnTextChanged>ROB_OptionsTabCurrentIconAlpha_OnTextChanged(self)
+									</OnTextChanged>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_T_ATT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<EditBox name="ROB_OptionsTabNextIconAlpha" inherits="InputBoxTemplate" autoFocus="false">
+								<Size>
+									<AbsDimension x="30" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabIconOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="520" y="-45" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString name="ROB_OptionsTabNextIconAlphaLabel" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+											<Anchors>
+												<Anchor point="RIGhT" relativePoint="LEFT">
+													<Offset>
+														<AbsDimension x="-5" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabNextIconAlphaLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_N_A'));</OnLoad>
+									<OnTextChanged>ROB_OptionsTabNextIconAlpha_OnTextChanged(self);</OnTextChanged>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_ICONS_T_ATT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</EditBox>
+							<Frame name="ROB_OptionsTabImportExportOptionsFrame">
+								<Size>
+									<AbsDimension x="765" y="100" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="10" y="-270" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+									<Color a=".5" r="0" g="0" b="0" />
+									<EdgeSize>
+										<AbsValue val="16" />
+									</EdgeSize>
+									<BackgroundInsets>
+										<AbsInset left="5" right="5" top="5" bottom="5" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabImportExportOptionsFrameLabel" inherits="GameFontNormal" nonspacewrap="true">
+											<Anchors>
+												<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabImportExportOptionsFrameLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_IMPORT'));</OnLoad>
+								</Scripts>
+							</Frame>
+							<CheckButton name="ROB_OptionsTabExportBindsButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabImportExportOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-10" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabExportBindsButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_EXPORTBINDS'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabExportBindsButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_EXPORTBINDS_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_OptionsTabAllowOverwriteButton" inherits="ROB_CheckButtonTemplate" hidden="true">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabImportExportOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-40" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabAllowOverwriteButtonText:SetText(RotationBuilderUtils:localize('ROB_OPTION_OVERWRITE'))
+									</OnLoad>
+									<OnClick>ROB_OptionsTabAllowOverwriteButton_OnToggle(self);
+									</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_OVERWRITE_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<CheckButton name="ROB_OptionsTabUseOldImportExportButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabImportExportOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-25" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabUseOldImportExportButtonText:SetText(RotationBuilderUtils:localize('ui/options/importExport/useOld/text'))</OnLoad>
+									<OnClick>ROB_OptionsTabUseOldImportExportButton_OnToggle(self);</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/options/importExport/useOld/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<Button name="ROB_OptionsTabLoadDefaults" inherits="UIPanelButtonTemplate">
+								<Size>
+									<AbsDimension x="75" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabImportExportOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-65" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_OPTION_LOADDEFAULT'));</OnLoad>
+									<OnClick>ROB_LoadDefaultRotations();</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_LOADDEFAULT_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();
+									</OnLeave>
+								</Scripts>
+							</Button>
+
+							<Frame name="ROB_OptionsTabUIOptionsFrame">
+								<Size>
+									<AbsDimension x="765" y="100" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTab" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="10" y="-380" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+									<Color a=".5" r="0" g="0" b="0" />
+									<EdgeSize>
+										<AbsValue val="16" />
+									</EdgeSize>
+									<BackgroundInsets>
+										<AbsInset left="5" right="5" top="5" bottom="5" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabUIOptionsFrameText" inherits="GameFontNormal" nonspacewrap="true">
+											<Anchors>
+												<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
+													<Offset>
+														<AbsDimension x="0" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabUIOptionsFrameText:SetText(RotationBuilderUtils:localize('ROB_OPTION_UI'));</OnLoad>
+								</Scripts>
+							</Frame>
+
+							<Button name="ROB_OptionsUIScaleAdd" inherits="UIPanelButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabUIOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="65" y="-25" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabUIScaleLabel" inherits="GameFontNormal" justifyH="LEFT">
+											<Size>
+												<AbsDimension x="380" y="21" />
+											</Size>
+											<Anchors>
+												<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+													<Offset>
+														<AbsDimension x="-75" y="20" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										self:SetText(RotationBuilderUtils:localize('ROB_OPTION_UISCALE_ADD'));
+										ROB_OptionsTabUIScaleLabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_UISCALE'));
+									</OnLoad>
+									<OnClick>ROB_Options_UIScaleAdd_OnClick(self);</OnClick>
+								</Scripts>
+							</Button>
+
+							<Button name="ROB_OptionsUIScaleSub" inherits="UIPanelButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabUIOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="85" y="-25" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsUIScaleValue" inherits="GameFontNormal" justifyH="LEFT">
+											<Size>
+												<AbsDimension x="380" y="21" />
+											</Size>
+											<Anchors>
+												<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+													<Offset>
+														<AbsDimension x="10" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_OPTION_UISCALE_MIN'));</OnLoad>
+									<OnClick>ROB_Options_UIScaleSub_OnClick(self);</OnClick>
+								</Scripts>
+							</Button>
+							<CheckButton name="ROB_OptionsTabOnOffButton" inherits="ROB_CheckButtonTemplate">
+								<Size>
+									<AbsDimension x="20" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabUIOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="5" y="-50" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Scripts>
+									<OnLoad>ROB_OptionsTabOnOffButtonText:SetText(RotationBuilderUtils:localize('ui/options/ui/onOff/text'))</OnLoad>
+									<OnClick>ROB_OptionsTabOnOffButton_OnToggle(self);</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ui/options/ui/onOff/tooltip'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();</OnLeave>
+								</Scripts>
+							</CheckButton>
+							<Button name="ROB_OptionsTabResetUI" inherits="UIPanelButtonTemplate">
+								<Size>
+									<AbsDimension x="120" y="20" />
+								</Size>
+								<Anchors>
+									<Anchor point="BOTTOMLEFT" relativeTo="ROB_OptionsTabUIOptionsFrame" relativePoint="BOTTOMLEFT">
+										<Offset>
+											<AbsDimension x="5" y="5" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabResetUILabel" inherits="GameFontNormal" justifyH="LEFT">
+											<Size>
+												<AbsDimension x="380" y="21" />
+											</Size>
+											<Anchors>
+												<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+													<Offset>
+														<AbsDimension x="10" y="0" />
+													</Offset>
+												</Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										self:SetText(RotationBuilderUtils:localize('ROB_OPTION_RESETUI'));
+										ROB_OptionsTabResetUILabel:SetText(RotationBuilderUtils:localize('ROB_OPTION_RESETUI_EXP'));
+									</OnLoad>
+									<OnClick>ROB_Options_ResetUI_OnClick(self);</OnClick>
+									<OnEnter>
+										GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT");
+										GameTooltip:SetText(RotationBuilderUtils:localize('ROB_OPTION_RESETUI_TT'));
+									</OnEnter>
+									<OnLeave>GameTooltip:Hide();
+									</OnLeave>
+								</Scripts>
+							</Button>
+
+							<Slider name="ROB_OptionsTabUpdateRateSlider" orientation="HORIZONTAL" minValue="1" maxValue="10" valueStep="1">
+								<Size>
+									<AbsDimension x="180" y="16" />
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT" relativeTo="ROB_OptionsTabUIOptionsFrame" relativePoint="TOPLEFT">
+										<Offset>
+											<AbsDimension x="150" y="-15" />
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+									<EdgeSize>
+										<AbsValue val="8" />
+									</EdgeSize>
+									<TileSize>
+										<AbsValue val="8" />
+									</TileSize>
+									<BackgroundInsets>
+										<AbsInset left="3" right="3" top="6" bottom="6" />
+									</BackgroundInsets>
+								</Backdrop>
+								<Layers>
+									<Layer level="OVERLAY">
+										<FontString name="ROB_OptionsTabUpdateRateSliderTextT" inherits="GameFontNormalSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="TOP" y="8"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabUpdateRateSliderText" inherits="GameFontGreenSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOM"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabUpdateRateSliderTextBL" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMLEFT"></Anchor>
+											</Anchors>
+										</FontString>
+										<FontString name="ROB_OptionsTabUpdateRateSliderTextBR" inherits="GameFontHighlightSmall">
+											<Anchors>
+												<Anchor point="TOP" relativePoint="BOTTOMRIGHT"></Anchor>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+								<Scripts>
+									<OnLoad>
+										ROB_OptionsTabUpdateRateSliderTextT:SetText(RotationBuilderUtils:localize('ROB_OPTION_UPDATERATE'));
+										ROB_OptionsTabUpdateRateSliderText:SetText(RotationBuilderUtils:localize('ROB_OPTION_UPDATERATE_CV'));
+										ROB_OptionsTabUpdateRateSliderTextBL:SetText(RotationBuilderUtils:localize('ROB_OPTION_UPDATERATE_MIN'));
+										ROB_OptionsTabUpdateRateSliderTextBR:SetText(RotationBuilderUtils:localize('ROB_OPTION_UPDATERATE_MAX'));
+									</OnLoad>
+									<OnValueChanged>ROB_Option_UpdateRate_OnValueChanged(self);</OnValueChanged>
+								</Scripts>
+								<ThumbTexture file="Interface\Buttons\UI-SliderBar-Button-Vertical">
+									<Size>
+										<AbsDimension x="32" y="32" />
+									</Size>
+								</ThumbTexture>
+							</Slider>
+
+						</Frames>
+					</Frame>
+				</Frames>
+			</Frame>
+
+			<!-- Main Tab buttons -->
+			<Button name="$parentTab1" inherits="OptionsFrameTabButtonTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="5" y="-30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_ROTATION_TAB'));</OnLoad>
+					<OnClick>ROB_MainWindowSwitchToTab(self);</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="$parentTab2" inherits="OptionsFrameTabButtonTemplate" id="3">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="-5" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>self:SetText(RotationBuilderUtils:localize('ROB_UI_OPTIONS_TAB'));</OnLoad>
+					<OnClick>ROB_MainWindowSwitchToTab(self);</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropColor(0, 0, 0, 1);
+				ROB_FrameTitle:SetText(RotationBuilderUtils:localize('ROB_UI_TITLE'));
+				ROB_MiniMapButton:Hide();
+				ROB_OnLoad(self);
+			</OnLoad>
+
+			<OnMouseUp>
+				if (self.isMoving) then
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+				end
+			</OnMouseUp>
+
+			<OnDragStart>
+				self:StartMoving();
+				self.isMoving = true;
+			</OnDragStart>
+
+			<OnDragStop>
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+			</OnDragStop>
+
+			<OnShow>
+				self:RegisterForDrag("LeftButton");
+			</OnShow>
+
+			<OnEvent>
+				ROB_OnEvent(self, event, ...);
+			</OnEvent>
+		</Scripts>
+	</Frame>
+
+	<!-- Ask for user input frame -->
+	<Frame name="ROB_StringDialog" parent="UIParent" frameStrata="FULLSCREEN_DIALOG" hidden="true" enableMouse="true">
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="UIParent" relativePoint="CENTER" />
+		</Anchors>
+		<Size>
+			<AbsDimension x="350" y="155" />
+		</Size>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<Color a="1" r="0" g="0" b="0" />
+			<BackgroundInsets>
+				<AbsInset left="10" right="11" top="11" bottom="10" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_PromptText" inherits="GameFontNormal" justifyH="LEFT" justifyV="TOP">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="25" y="-25" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+					<Size>
+						<AbsDimension x="300" y="40" />
+					</Size>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<EditBox name="$parent_TextBox" inherits="InputBoxTemplate" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="50" y="-75" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="250" y="25" />
+				</Size>
+				<Scripts>
+					<OnTextChanged function="ROB_StringDialog_TextBox_OnTextChanged" />
+				</Scripts>
+			</EditBox>
+			<Button name="$parent_OKButton" hidden="false" inherits="UIPanelButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-125" y="20" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="95" y="25" />
+				</Size>
+				<Scripts>
+					<OnClick function="ROB_StringDialog_OKButton_OnClick" />
+				</Scripts>
+			</Button>
+			<Button name="$parent_CancelButton" hidden="false" inherits="UIPanelButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-20" y="20" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="95" y="25" />
+				</Size>
+				<Scripts>
+					<OnClick function="ROB_StringDialog_CancelButton_OnClick" />
+				</Scripts>
+			</Button>
+		</Frames>
+	</Frame>
+	<!-- Game Tooltip Frame -->
+	<GameTooltip name="ROB_Tooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true">
+		<Scripts>
+			<OnTooltipCleared>
+				if (self.Queried == true) then
+				if (self.Response == nil) then
+				self.Response = true;
+				else
+				self.Queried = nil;
+				self.Response = nil;
+				ROB_ActionList_Update();
+				end
+				end
+			</OnTooltipCleared>
+		</Scripts>
+	</GameTooltip>
+</Ui>

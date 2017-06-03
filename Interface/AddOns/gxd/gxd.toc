@@ -1,0 +1,5 @@
+## Interface: 70150
+## Title: gxd_addon
+## Title-zhCN: 一些小功能
+## Author: gxd
+gxd.lua

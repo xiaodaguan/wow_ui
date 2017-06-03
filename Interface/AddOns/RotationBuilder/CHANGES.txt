@@ -1,0 +1,893 @@
+commit c0ac073fe610aaf32310ffd2a80ad65491bd50ef
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Apr 15 19:41:00 2017 +0200
+
+    Prepare next release
+
+commit c5ddb16e20dc283855472af31c3980acbfe1bfb6
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Apr 15 19:40:21 2017 +0200
+
+    Update README
+
+commit eb83fa3b2d2a7a109cca8c2fc13bb0c27a92f1f3
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Apr 15 14:56:01 2017 +0200
+
+    Add an option to display rotations icons on dead target (activated by default).
+    This was a suggestion of  cosappie
+
+commit bd5a26de7bcfbcf9121d9dd3110a872b773ca7e3
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Apr 15 14:24:35 2017 +0200
+
+    Factorize method to check if we should display rotation builder on a target.
+
+commit 169381e15c3250fdcfdd6b1ca71b0e8061724dc2
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Apr 15 14:19:34 2017 +0200
+
+    Fix items not working with rotation builder
+
+commit 61c72d6b91b5af88398f129e231720d3b5a0d7bc
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Apr 2 19:31:26 2017 +0200
+
+    Prepare Git developement environment with libraries
+    
+    + Add git dependency to Ace-3.0 libraries\n+ Update the path to these libraries for both dev environment and production
+
+commit e20c90ba0977a943b599fb35ab2231afd4030c11
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Wed Mar 29 19:09:37 2017 +0000
+
+    Replace Readme.txt with a Markdown one.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@215 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit d86571c2650149db02b0e579f1084213e3245a77
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Wed Mar 29 19:08:42 2017 +0000
+
+    Update to WoW patch 7.2
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@214 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5fd1afac756d6ae04bd8898dd410d50cc94d0648
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Mar 2 11:12:17 2017 +0000
+
+    - Fixed Feral Druid Moonfire spamming by fixing the debuff id.
+    - Improved Feral Druid Regrowth usage with or without the Bloodtalons talent
+    - Added a new option to Rotation Builder's option tab under the UI options to switch the addon on/off
+    - Added 2 new commands /rob on et /rob off to go with the new option
+    - Also edited the addon mini-map icon left click to do the same
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@212 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 7daa82da7e887904e3c8d891d78be52a8ae50e81
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Feb 27 21:45:32 2017 +0000
+
+    - Improved Enhancement Shaman Multi-target Feral Spirit so that it shows up a bit before Crash Lightning is available, because it often showed up too late if you're quick to react.
+    - Added a Judgment debuff check to Hammer of Justice for Retribution Paladin so that it only shows up to empower Justicar's Vengeance on stunnable targets.
+    - Fixed Affliction Warlock Multi-target Empowered Life Tap so that it only shows up when you actually know the talent.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@210 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 6b2bcc4fe3ae7f604785e2b69c49912c0bc34531
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Feb 20 22:30:45 2017 +0000
+
+    - Some cleaning for Rogue rotations, you shouldn't notice any change, not even the faster action calculation unless you're a computer.
+    - Fixed Destruction Warlock rotation Immolate spell not detecting it's debuff
+    - Fixed mage spellsteal not working (should also fix magic buff dispel for those class that can dispel enemy buffs)
+    - Improved Frost Mage rotations
+    - Updated Arcane and Fire Mage rotations to 7.1.5 and added multi-target ones
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@208 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5a7609db546ac9194d9e2610a332d4e44b7d42f9
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Feb 18 20:14:37 2017 +0000
+
+    - Updated Discipline and Holy Priest rotations to 7.1.5 and added multi-target ones
+    - Some improvements to Shadow Priest rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@206 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 8a0c82693620fa14cc26cf6f304087b1abb4c7aa
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Feb 18 19:11:48 2017 +0000
+
+    Update Rogue rotations to 7.1.5 WoW version + and multi targets rotations.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@205 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit c84609871a9885d15450eaac419ab5eb16604159
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Feb 17 19:41:17 2017 +0000
+
+    - Some optimizations to Protection Warrior rotations
+    - Updated Demonology and Destruction Warlock rotations to 7.1.5
+    - Fixed some issues with Affliction Warlock rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@203 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 22b60308efe3524320258018bc49be4af59fff76
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Feb 13 10:42:45 2017 +0000
+
+    - Several optimizations to Enhancement Shaman, Restoration Shaman, Beast Mastery Hunter and Restoration Druid rotations.
+    - Updated Brewmaster and Mistweaver Monk rotations to 7.1.5 and added multi-target ones.
+    - Fixed the multi-target checkbox display to only be displayed when creating or editing a rotation.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@201 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit e9496549a338b667a53ad3cb4ed48dda6829348b
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Feb 2 11:44:40 2017 +0000
+
+    - "Fixed" the Guardian Druid rotation problem with "Thrash" not being displayed though not every one got this error and i still don't know why it only crop up for some people.
+    - Removed cooldown check for healing spells in both Restoration Shaman and Druid rotations because those rotations are mostly for DPS purpose when questing or when having no healing to do in dungeon and raids. And there are a lot of addons out there for the purpose of checking spell cooldowns.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@199 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit f6cf558125a24fde1264906cf61f2bb9f25bbd64
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Jan 28 20:32:56 2017 +0000
+
+    - Updated Druid rotations to 7.1.5
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@197 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 69b42e8a4a5878218ee4d132ce4bfcad5cabfc52
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Jan 27 21:10:07 2017 +0000
+
+    - Completed the french translation
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@196 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit e81bdd94b7a77b473cf132b0d2dd297766ccb922
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Jan 27 14:56:36 2017 +0000
+
+    - Updated Warrior rotations to 7.1.5
+    - Added a suboption to the range check option for those spells that can't be used bellow 8 yards (such as the Protection Warrior Intercept)
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@194 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit b20180f8cd310a66a58b51849a0c927971de6231
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jan 26 20:05:34 2017 +0000
+
+    - Updated Paladin rotations to 7.1.5
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@192 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 45e33399c86e20fa4199d84e3e2bd3758171d570
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jan 26 18:00:16 2017 +0000
+
+    - Updated Death knight rotations to 7.1.5
+    - Fixed Rogue rotations versions to 7.1.0 since it still displayed them as 7.0.3
+    - Updated TOC of the Rogue module
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@190 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 688049d5217a249430877e02d0647a990cbdde03
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jan 25 20:04:57 2017 +0000
+
+    - Updated Hunter rotations to 7.1.5
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@189 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5a0431ed398d7a1dd3863e52890c9841a0cd4857
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jan 25 14:55:47 2017 +0000
+
+    - Updated Demon Hunter rotations to 7.1.5
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@187 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 4842cb4898b1b290f779b86d618d43280845d69a
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jan 25 13:17:30 2017 +0000
+
+    - Updated Affliction Warlock rotation to 7.1.5 and added the multi-target one
+    - Updated Windwalker Monk rotation to 7.1.5 and added the multi-target one
+    - Updated Feral Druid rotation to 7.1.5 and added the multi-target one
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@186 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 668df64b64d95b5a2f2783e16f1598a3f310b8b1
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Jan 24 19:20:37 2017 +0000
+
+    - Updated Shaman rotations to 7.1.5
+    - Updated Shadow Priest rotation to 7.1.5 and added the multi-target one
+    - Updated Frost Mage rotation to 7.1.5 and added the multi-target one
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@185 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 6de761a83e1374a746eeabd55a4359b6c9b03dac
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Mon Jan 23 22:23:51 2017 +0000
+
+    Update addon version for next release.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@184 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit a082095b7554d37f038b01b0ce4a309fbb1d6056
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Dec 21 14:34:22 2016 +0000
+
+    - Updated demon hunter rotations to 7.1.0
+    - Fixed demon hunter rotations not auto-updating
+    - Added multi-target demon hunter rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@182 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 75b991f5338de76a8fe5685784c8135dcbb089ce
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Dec 10 21:01:29 2016 +0000
+
+    - Fixed Death Knights (Blood) Death Strike
+    - Fixed Paladin (Protection) Shield of the Righteous
+    - Updated Warrior rotations to 7.1.0 with artefacts and added multi-target ones
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@181 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 326d35d6c7e7df3070ce8dc5320fd662eecce8c5
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Nov 26 21:39:47 2016 +0000
+
+    - Updated shaman rotations to 7.1.0
+    - Updated hunter rotations to 7.1.0
+    - Updated death knight rotations to 7.1.0
+    - Updated paladin rotations to 7.1.0
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@179 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ca1c6bf57be6edd24ff6486f6d22d095fc5fb6cd
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Thu Nov 24 14:43:18 2016 +0000
+
+    Add back the toggle for custum cases.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/KeyBindsRework@177 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ca1c6bf57be6edd24ff6486f6d22d095fc5fb6cd
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Thu Nov 24 14:43:18 2016 +0000
+
+    Add back the toggle for custum cases.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/KeyBindsRework@177 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 6de5d73922401767c1377898d08bb7b367060511
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Tue Nov 22 16:58:16 2016 +0000
+
+    Fix Rotation Builder keybinds registration.
+    + Add new keybind to select the multitarget rotation by default.
+    + Add support for editing the rotation which sould be selected for the multi-target mode.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/KeyBindsRework@176 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 305e4e6ed96caf607d0b61ce20996eccfb48627a
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 20 18:44:08 2016 +0000
+
+    Prepare branch to do the rework on the keybinds.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/KeyBindsRework@175 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 1b371f43be0e7577aeaef3ff09e39f11168e2025
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 20 17:34:04 2016 +0000
+
+    Use the new packaging configuration way.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@173 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ddf45e308fc906d9e64eb541afc061f079dc79e2
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 20 17:13:23 2016 +0000
+
+    Update Ace3 SVN URL dependencies to match the new repo.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@172 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5abdff0d306cf4830c0a088a5c00727d5a86f2c8
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 20 16:56:55 2016 +0000
+
+    Add Demon Hunter rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@171 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 0e931c963daa576b394d1770cc3efa69651b3442
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Wed Oct 26 11:49:15 2016 +0000
+
+    Update interface version for patch release 7.1.0 of WoW.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@169 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 675949f2ccec659a87e8eede4f356660ecc291fc
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Tue Oct 25 19:53:04 2016 +0000
+
+    Fix next action icon's position option which wasn't working anymore because of code deletion (heavy hand)
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@167 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 24335db88efd45191f826542fa676aa107822a27
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Oct 23 14:41:23 2016 +0000
+
+    Fix ROB_OptionsTabToggleIconsAlpha_OnTextChanged error
+    This bug was caused by the removal off the toggles, so I just removed the options calling the deleted part.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@165 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 1efaffe8de7c0d3cd43389cf9efa1aee56fc2539
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Oct 15 21:42:24 2016 +0000
+
+    Fix some FR translation
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@163 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 498d90ee2f9f28939644ab4d68cb6603e57a2751
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Mon Oct 10 08:18:09 2016 +0000
+
+    Update rotation for Rogue with all artifacts spells.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@162 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 72fe21b56e668e6762838f7f286f59ff2f7b3280
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Sep 27 12:09:02 2016 +0000
+
+    - Updated hunter rotation with artefacts (Beast mastery still need testing since i haven't unlocked the artefact spell yet)
+    - Should be done cleaning toggles and keybinds.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@161 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 95e52a0e515332bc8f771a0f553caa6c1289bef1
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Wed Sep 14 13:04:10 2016 +0000
+
+    Add range option to check if the target is in the range of the spell.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@160 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit a884fd636163ac57df0a240fa5d4776a80d7e357
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Sep 13 09:01:11 2016 +0000
+
+    - Updated shaman rotations taking artefacts into account.
+    - Finally fixed a long standing issue with cooldown checks for the next action. It also seems to have fixed the blinking icons but i'm not 100% sure.
+    - Started on the bindings and toggles cleaning, still a long way to go.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@159 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ef0b6d3818f196e6d4a189bc7a0789b6b0c2d90f
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Aug 19 17:54:21 2016 +0000
+
+    - Finaly managed to fix an UI error in the option tab
+    - Added a second cooldown check
+    - Rearranged some options in the general and player tabs
+    - Brought back 2 options "In combat" and "Not in combat" (Found a new way to properly detect the battle state)
+    - Updated the retribution paladin rotation with the "Not in combat" option for those 3 blessings that can't be used while in combat
+    - Added a new option in the option tab to only display the action icons on hostile or neutral targets (Asked by MisterRick though i left the display on friendly target by default until this option is checked)
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@157 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit af74cef278a8f888b59171c216654669b3da357f
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Aug 15 09:06:43 2016 +0000
+
+    - Fixed the vengeance demon hunter consume magic spell generating fury instead of pain. I simply did a copy/paste from havoc to vengeance and forgot to change the power type.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@155 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 8e20d0211523a6ab761df343bc7642f82147029c
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Aug 13 14:50:49 2016 +0000
+
+    - Updated all rotations to make use of interruptions and dispels
+    - Some small fixes and optimizations as well
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@153 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5005e9c58468521cf18f398a4c72ed7ce2193c39
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Aug 13 09:11:37 2016 +0000
+
+    - Small updates and improvements to shaman, hunter and druid rotation (mostly added interrupt and dispel when available)
+    - Small optimization in next action calculation, actions that have to be casted after the current one will properly be displayed
+    - Fixed some localization issues
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@152 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit b687114c55e2d5556975b085531e336bed522c72
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Aug 11 12:58:01 2016 +0000
+
+    - Brought back interrupt, dispel and spellsteal options
+    - Added demon hunter rotations for patch 7.0.3
+    - Fixed a small localization error on rogues
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@150 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit db4586ed0ea289fa90e8094c65549c558aa9c3a4
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Mon Aug 8 19:08:15 2016 +0000
+
+    Fix error caused by wrong key word renaming
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@149 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit e0a94823647549b76dfe35ba6ed1c93d53acf11b
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Aug 7 17:14:34 2016 +0000
+
+    - Small optimisations to rogue rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@147 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 2c1293f2652255c0434cb430d2cd0b5c3a90866e
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Aug 6 21:01:50 2016 +0000
+
+    - Incorporated talents into warlock rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@146 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ede13e388e9defc2af2ad79247e2d14107f945fb
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Aug 6 16:29:26 2016 +0000
+
+    Update rotations for the rogue class.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@145 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 22aad5dc8867f356bd331309af6af32b0b6af0b9
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Aug 4 20:58:10 2016 +0000
+
+    - Added a new option to check another spell charges
+    - Incorporated talents into mage rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@144 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 7155ea2d51748aa87e0c605b09959f48275f0b24
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Aug 3 16:19:36 2016 +0000
+
+    - Incorporated talents into priest rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@143 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit eb477a2fcc2f7ea4c6dee980bd84ceb388bb7cf5
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Aug 2 20:24:27 2016 +0000
+
+    - Incorporated talents into monk rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@142 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 459b5f5710a0bd918807fc49735189f838357afe
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Aug 1 16:37:12 2016 +0000
+
+    - Incorporated talents into druid rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@141 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 1cc46878d2b48bd94c1da79f852660a3f7d37c99
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Aug 1 12:46:19 2016 +0000
+
+    - Incorporated talents into warrior rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@139 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit c95587c966747672c519cd924e4757076333604a
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Jul 31 21:40:59 2016 +0000
+
+    - Incorporated talents into paladin rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@138 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit a3b885277a149e0d5980b016e9858d9e6e0906f1
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Jul 31 20:16:00 2016 +0000
+
+    - Incorporated talents into death knight rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@137 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 765ecbb4da835b75a090fdf08f10bd87feffdf92
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 28 20:08:25 2016 +0000
+
+    - Incorporated talents into hunter rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@136 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 164afa280787ce2960c335fc7b391fe38e7e186a
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 28 13:07:35 2016 +0000
+
+    - Cleaned and ordered localization files
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@131 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 164afa280787ce2960c335fc7b391fe38e7e186a
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 28 13:07:35 2016 +0000
+
+    - Cleaned and ordered localization files
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@131 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 49e368e926e8f6e7c2b08b9811174e80bf406c9f
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jul 27 21:18:46 2016 +0000
+
+    - Too many unrealeased changes to list
+    - Updated rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@128 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 49e368e926e8f6e7c2b08b9811174e80bf406c9f
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jul 27 21:18:46 2016 +0000
+
+    - Too many unrealeased changes to list
+    - Updated rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@128 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 7db96bf111b76eaadf4126a0d31f8fef4b12ed65
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Wed Jul 27 20:55:27 2016 +0000
+
+    - Updated shaman rotations to take talents into account
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@127 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 9d09d67b447d7fcc7b4493a483c107da158b9ee6
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Jul 26 21:54:29 2016 +0000
+
+    - Basic update to mage rotations for patch 7.0.3
+    - Small fix to the restoration shaman rotation
+    - Finally got rid of those annoying green square due to API changes related to texture setting
+    - Found the new arcane mage resource : Arcane Charges and added it to the power check
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@126 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 147abdacc1cadf1d159523516f71008dc4ab7dc0
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Tue Jul 26 15:00:48 2016 +0000
+
+    - Basic update to priest rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@125 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit efa7e7b787573459ee48220abaf5cecf89fd7d71
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Mon Jul 25 16:26:19 2016 +0000
+
+    - Basic update to warlock rotations for patch 7.0.3
+    - Removed the stance check as it is no longer used
+    - Added a second resources check in the player tab for more flexibility as most classes now have 2 different resources.
+    - Changed the way Rotation Builder check is the player know a spell or not as AGAIN Blizzard changes broke it (Passive talents were no longer detected). Found a new way AGAIN that seems to work properly, the "Not in the spellbook" check should no longer be needed though it'll remain until i'm done updating all rotations.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@124 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 25d132984aed20e7118079d10018ff7e600d60cc
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Jul 24 17:05:38 2016 +0000
+
+    - Basic update to monk rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@123 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit df804de8d486020d2f6cb8657e32e749e266a288
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Jul 22 20:23:03 2016 +0000
+
+    - Small adjustments to rogue rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@122 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 773f1c4c4d83da4ba12079e222338db5a3b342ba
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Jul 22 18:37:36 2016 +0000
+
+    - Basic update to druid rotations for patch 7.0.3
+    - Removed the eclipse system as it no longer exist
+    - Renamed the eclipse resource as Lunar Power
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@121 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit c9e61b9a1222112a77f01dc5067345d35da797a8
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Fri Jul 22 16:47:53 2016 +0000
+
+    Update default rotation for the rogue.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@120 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 38c9f34def6a288357345df55bb1e65c28d2cf2d
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Jul 22 13:50:25 2016 +0000
+
+    - Small update to frost death knights
+    - Basic update of warrior rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@119 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit a7874af8927551ee68262e35a13da6bf3e09426b
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 21 21:21:57 2016 +0000
+
+    - Basic update to paladin rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@118 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit b3360530ee105b2fdf19763591dc95b916b799b2
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 21 19:59:45 2016 +0000
+
+    - Basic update to death knight rotations for patch 7.0.3
+    - Fixed death knight runes check as there are no longer 4 kind of runes
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@117 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 37992c4a12a16d45a6d71b77c09c6e8cbc1fd531
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 21 17:08:07 2016 +0000
+
+    - Small changes to shaman rotations for smoother next action calculation
+    - Basic hunter rotations for patch 7.0.3
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@116 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit ad4527651e8b47feb0832ec1b9f1b1f12375722a
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Jul 21 14:57:17 2016 +0000
+
+    - Lot of fixes that wheren't previously commited
+    - Some fixes for patch 7.0.3
+    - Removed glyph and fire totem check as they are no longer used
+    - Quick update for shaman rotations to 7.0.3, these are basic rotation, complete ones will come after i'm done with all classes
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@115 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 8a9bce0e472a8b3868abbe022d9465f71f30dec0
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Thu Jul 21 13:04:20 2016 +0000
+
+    Update TOC + update dependencies.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@114 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit d4328d46b3a9ae361ea432f3299e2079c9e42de6
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Dec 12 17:18:20 2015 +0000
+
+    Update rogue rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@113 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 9c1c2007cb959453d87ea7e255e4c0b984afa6c3
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Dec 3 18:56:12 2015 +0000
+
+    - Fixed rotation version numbers for mages
+    - Updated and fixed shadow priest rotation
+    - Addes discipline and holy priest rotations to prepare the next WoW extansion
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@112 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 032f29be8dc066c1a7d8916e85b6c49cefdc0a22
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Wed Nov 25 21:42:54 2015 +0000
+
+    Update subtlety rogue rotation
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@111 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 798906972ea71b4df391c418dfb1cc603293be69
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sat Nov 21 21:18:21 2015 +0000
+
+    - Fixed the last casted option
+    - Updated and fixed Arcane, Fire and Frost Mages rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@110 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit d8082eb7d0c1eea0f57352775a3ec83bb4382820
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Tue Nov 17 21:50:21 2015 +0000
+
+    Update subtlety rotation for rogues.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@109 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit eea991001c5f2a6291a72f0bcdfb64268b74fcd5
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 15 17:40:01 2015 +0000
+
+    Update version information for all rotations
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@108 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit f33dab8c8743a228ae141663332ceafabe534c58
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sun Nov 15 17:19:25 2015 +0000
+
+    Update specialization field to show specialization name.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@107 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit c9b7c05ac3f849c57abc9e70c56bac23c57eb550
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Nov 15 13:28:03 2015 +0000
+
+    - Added the specialization option to specify to witch specialization the rotation is associated
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@106 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 86d525eb3f09d20476c75c56cca01630f0761603
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Nov 15 10:51:39 2015 +0000
+
+    - Fixed the has stack option
+    - Fixed the known not spell option
+    - Fixed the is not glyphed option
+    - Removed the GCD spell option
+    - Rewrote the spell know function to accuratly determine if the player know a spell or a talent, it should no be 100% accurate.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@105 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit f756f4234907cbe5d1384e22d004c87113f029db
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 18:54:05 2015 +0000
+
+    Remove alert message about overridden rotations
+    Add check for specialization ID nil.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@104 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 575e55471ad219d1a5647514861b862830ba234e
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 18:51:45 2015 +0000
+
+    Fix default rotation selection so that it select the one matching the specialization if none were selected before.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@103 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 6554964ff0522e7ead195f2ab04e97e1f16470df
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 17:56:40 2015 +0000
+
+    Update TOC version.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@102 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 72a051da2c4958c23a3e6ab6e100afc884265338
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 17:55:30 2015 +0000
+
+    Add clean up functionality for rotation builder.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@101 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 5c617f2ad18111d38f54cdcd5e5ea7e5f61a7621
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 16:40:11 2015 +0000
+
+    Clean up code style + ignore IDE stuffs.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@100 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 18c212c54761c74fe22795fc3179cfb061c648ea
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Nov 14 16:36:51 2015 +0000
+
+    Add auto update functionality for default rotations.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@99 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 708babd8a2a2ab6c96eb60232f675f66d28ff06b
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Fri Nov 13 14:14:25 2015 +0000
+
+    - Small fix to prevent errors from occuring when the spellbook spell name is nil
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@98 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 3c10ef43127af14691ff7c7c4c96f28698720052
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Nov 12 22:21:51 2015 +0000
+
+    - Removed combo points
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@97 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit e3c1129a71b58e73c96a7ddf3646e466195367af
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Thu Nov 12 21:48:32 2015 +0000
+
+    - Added a new cost option (need to do the same for runes)
+    - Changes the spell name option to spellbook spell name to check if a spell is known
+    - Changed the gcdspell option to modified spell to get the spell infos when the actual spell is different from the one in the spellbook
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/branches/id-fix@96 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 592e65d858fd8873cde04bb68e6410dc609506c3
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Sat Oct 31 15:31:41 2015 +0000
+
+    New feature: auto change to specialization rotation
+    - Listen to specialization change event
+    - Update default rotation to add specialization information
+    
+    You will have to delete all rotation and import them again so that this feature can work.
+    For Warrior and Death Knight, don't forget to delete unneeded specialization as both of them do have multiple rotations per specialization.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@95 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit c916350f701042adc695253ec8f06ca9d7150fea
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Tue Oct 13 20:26:08 2015 +0000
+
+    Fix some problems with rogue subtlety rotation.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@93 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit eab0d1fd45d5ceb3a804a680c245dc38a24789cc
+Author: Vianney Dubus <vianney.dubus@gmail.com>
+Date:   Tue Oct 13 20:18:51 2015 +0000
+
+    Fix some problems with rogue subtlety rotation.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@92 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+
+commit 4751841d91e94459bc8bb1f1aa0a627aadea67e2
+Author: Jocelyn Dubus <jocelyn.dubus@laposte.net>
+Date:   Sun Oct 11 17:05:02 2015 +0000
+
+    - Fixed a whole lot of API calls that blizzard changed since Cataclysm
+    - Fixed the debug option that wasn't working since Cataclysm
+    - The GCD Spell is no longer used (though not yet removed from the interface) and instead a brand new function calculate the gcd at each update to account for haste procs, potions and buffs.
+    - The icon option is no longer needed to get the spell icon but can still be used if you want to display another icon instead of the spell.
+    - Optimized the next action logic for better prediction (still in progress but should be better)
+    - Added a new option to check if the player is stealthed
+    - Added a new option to check if a spell has a proc
+    
+    - TODO : Fix the cooldown calculation
+    - TODO : Find a way to get the spell cost since the API no longer return this value and it's necessary for the next action calculation
+    - TODO : Redo every single rotations since none of them work as intended due to all the changes done, maybe i'll even throw in some rotations for the healer specs so that they can DPS when bored or while questing.
+    - TODO : Redo the death knight rune system so that it's more flexible.
+    - TODO : Finish reworking the current and next action logic to account for ressources generation (be they mana, chi, combo points, runes or whatever the ressource actually is)
+    - TODO : Lot of small improvements that are class specific.
+    
+    
+    Just so you know we're still working on this addon, i'm currently in the process of leveling all eleven classes to 100 and i'm almost done (i need them at level 100 to properly test the rotations), after that it's back to working on every rotations, i'll fix issues as i go class by class has i took note of every thing while leveling.
+    
+    git-svn-id: https://repos.curseforge.com/wow/rotation-builder/trunk@91 3bc1ffbe-e05c-434b-a64b-d7d832f83c92
+

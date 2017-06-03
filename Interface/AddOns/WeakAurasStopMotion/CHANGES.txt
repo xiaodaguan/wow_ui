@@ -1,0 +1,10 @@
+lightweight tag 792a778d942c79f582a65ec5a6385ddbbb371a36 0.8.1
+Author:	Infus <infus@squorn.de>
+Date:	Sat Apr 1 18:24:32 2017 +0200
+
+commit 792a778d942c79f582a65ec5a6385ddbbb371a36
+Author: Infus <infus@squorn.de>
+Date:   Sat Apr 1 18:24:32 2017 +0200
+
+    Adapt to renamed OpenTexturePicker function in WeakAuras
+

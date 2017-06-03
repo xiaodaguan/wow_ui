@@ -1,0 +1,11 @@
+
+iKeystonesDB = {
+	["Player-833-02BF6E4F"] = {
+		["name"] = "柒年",
+		["maxCompleted"] = 0,
+		["class"] = "PALADIN",
+		["key"] = {
+		},
+		["server"] = "桑德兰",
+	},
+}

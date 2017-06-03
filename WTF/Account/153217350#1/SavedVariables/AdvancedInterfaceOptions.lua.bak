@@ -1,0 +1,7 @@
+
+AdvancedInterfaceOptionsSaved = {
+	["CharVars"] = {
+	},
+	["AccountVars"] = {
+	},
+}

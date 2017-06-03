@@ -1,0 +1,24 @@
+
+BF_Frames_Config = {
+	["SpellTimerMainFrame"] = {
+		["offX"] = -346.000030517578,
+		["point"] = "TOPLEFT",
+		["region"] = "UIParent",
+		["offY"] = 453,
+		["refPoint"] = "BOTTOMRIGHT",
+	},
+}
+BigFoot_Character = {
+	["Region"] = "cn0",
+	["Gender"] = 2,
+	["Race"] = "人类",
+	["Name"] = "Wrio",
+	["Faction"] = 0,
+	["Class"] = "潜行者",
+	["Level"] = 110,
+	["VCode"] = "364104715916366535816826560413901741674",
+	["Realm"] = "桑德兰",
+}
+BigFoot_SysTemSetTab = {
+	["BigFoot_LoadBefore"] = 1,
+}

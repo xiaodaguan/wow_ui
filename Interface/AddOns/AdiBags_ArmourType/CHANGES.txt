@@ -1,0 +1,12 @@
+lightweight tag 11b2ef080f65534ccac1369c339fe59b751fbe4d v1.0_beta2
+Author:	Tevildo <drwilko@gmail.com>
+Date:	Thu Dec 29 21:22:21 2016 +0000
+
+commit 11b2ef080f65534ccac1369c339fe59b751fbe4d
+Author: Tevildo <drwilko@gmail.com>
+Date:   Thu Dec 29 21:22:21 2016 +0000
+
+    only display armour type when major class is armor
+    
+    previously was showing C for e.g. wool cloth
+

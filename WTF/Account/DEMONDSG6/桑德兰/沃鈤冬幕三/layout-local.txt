@@ -1,0 +1,15 @@
+Version: 1
+Frame: BigFootBarFrame1
+FrameLevel: 1
+Anchor: RIGHT
+X: -462
+Y: 226
+W: 40
+H: 40
+Frame: DBMMinimapButton
+FrameLevel: 2
+Anchor: TOPRIGHT
+X: -136
+Y: -115
+W: 32
+H: 32

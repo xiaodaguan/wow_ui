@@ -1,0 +1,282 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 32,
+		["interrupts"] = 0,
+		["damage"] = 74734,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "MAGE",
+				["damaged"] = {
+				},
+				["auras"] = {
+					["冰冻"] = {
+						["name"] = "冰冻",
+						["active"] = 0,
+						["id"] = 205708,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 15,
+					},
+					["水元素: 水流喷射"] = {
+						["name"] = "水元素: 水流喷射",
+						["active"] = 0,
+						["id"] = 135029,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 4,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 29,
+				["interrupts"] = 0,
+				["dispells"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["ffdamagedonespells"] = {
+				},
+				["damage"] = 74734,
+				["damagespells"] = {
+					["水元素: 水流喷射"] = {
+						["hitmin"] = 3018,
+						["criticalamount"] = 12814,
+						["max"] = 6436,
+						["hitmax"] = 3342,
+						["hitamount"] = 9533,
+						["min"] = 3018,
+						["criticalmax"] = 6436,
+						["critical"] = 2,
+						["hit"] = 3,
+						["totalhits"] = 5,
+						["criticalmin"] = 6378,
+						["id"] = 135029,
+						["damage"] = 22347,
+					},
+					["寒冰箭"] = {
+						["criticalamount"] = 17609,
+						["max"] = 17609,
+						["min"] = 17609,
+						["criticalmax"] = 17609,
+						["critical"] = 1,
+						["totalhits"] = 1,
+						["criticalmin"] = 17609,
+						["id"] = 228597,
+						["damage"] = 17609,
+					},
+					["水元素: 水箭"] = {
+						["hitmin"] = 4174,
+						["criticalamount"] = 7992,
+						["max"] = 7992,
+						["criticalmin"] = 7992,
+						["critical"] = 1,
+						["min"] = 4174,
+						["criticalmax"] = 7992,
+						["hitmax"] = 4703,
+						["hit"] = 6,
+						["totalhits"] = 7,
+						["hitamount"] = 26786,
+						["id"] = 31707,
+						["damage"] = 34778,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 0,
+				["deathlog"] = {
+				},
+				["id"] = "Player-833-039DD88F",
+				["power"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["overhealing"] = 0,
+				["healingspells"] = {
+				},
+				["name"] = "我鈤冬幕节一",
+				["shielding"] = 0,
+				["healing"] = 0,
+				["healed"] = {
+				},
+				["maxhp"] = 215640,
+				["ccbreaks"] = 0,
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["目标假人"] = {
+				["players"] = {
+					["我鈤冬幕节一"] = {
+						["taken"] = 74734,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "MAGE",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 74734,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["shielding"] = 0,
+		["healing"] = 0,
+		["ffdamagedone"] = 0,
+		["power"] = {
+		},
+		["overhealing"] = 0,
+		["starttime"] = 1482289668,
+		["name"] = "总体",
+		["damagetaken"] = 0,
+		["mobtaken"] = 74734,
+		["mobhdone"] = 0,
+		["last_action"] = 1482289668,
+		["mobdone"] = 0,
+	},
+	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 32,
+			["interrupts"] = 0,
+			["endtime"] = 1482289700,
+			["damage"] = 74734,
+			["players"] = {
+				{
+					["last"] = 1482289698,
+					["healingabsorbed"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["目标假人"] = 74734,
+					},
+					["auras"] = {
+						["冰冻"] = {
+							["name"] = "冰冻",
+							["active"] = 0,
+							["id"] = 205708,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 15,
+						},
+						["水元素: 水流喷射"] = {
+							["name"] = "水元素: 水流喷射",
+							["active"] = 0,
+							["id"] = 135029,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 4,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 29,
+					["interrupts"] = 0,
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["damage"] = 74734,
+					["damagespells"] = {
+						["水元素: 水流喷射"] = {
+							["hitmin"] = 3018,
+							["criticalamount"] = 12814,
+							["max"] = 6436,
+							["hitmax"] = 3342,
+							["hitamount"] = 9533,
+							["min"] = 3018,
+							["criticalmax"] = 6436,
+							["critical"] = 2,
+							["hit"] = 3,
+							["totalhits"] = 5,
+							["criticalmin"] = 6378,
+							["id"] = 135029,
+							["damage"] = 22347,
+						},
+						["寒冰箭"] = {
+							["criticalamount"] = 17609,
+							["max"] = 17609,
+							["min"] = 17609,
+							["criticalmax"] = 17609,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["criticalmin"] = 17609,
+							["id"] = 228597,
+							["damage"] = 17609,
+						},
+						["水元素: 水箭"] = {
+							["hitmin"] = 4174,
+							["criticalamount"] = 7992,
+							["max"] = 7992,
+							["criticalmin"] = 7992,
+							["critical"] = 1,
+							["min"] = 4174,
+							["criticalmax"] = 7992,
+							["hitmax"] = 4703,
+							["hit"] = 6,
+							["totalhits"] = 7,
+							["hitamount"] = 26786,
+							["id"] = 31707,
+							["damage"] = 34778,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-833-039DD88F",
+					["first"] = 1482289669,
+					["ffdamagedone"] = 0,
+					["damagetakenspells"] = {
+					},
+					["power"] = {
+					},
+					["overhealing"] = 0,
+					["name"] = "我鈤冬幕节一",
+					["healingspells"] = {
+					},
+					["healing"] = 0,
+					["healed"] = {
+					},
+					["maxhp"] = 215640,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["目标假人"] = {
+					["players"] = {
+						["我鈤冬幕节一"] = {
+							["taken"] = 74734,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "MAGE",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 74734,
+					["done"] = 0,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["shielding"] = 0,
+			["damagetaken"] = 0,
+			["healing"] = 0,
+			["ffdamagedone"] = 0,
+			["power"] = {
+			},
+			["overhealing"] = 0,
+			["starttime"] = 1482289668,
+			["name"] = "目标假人",
+			["mobname"] = "目标假人",
+			["mobtaken"] = 74734,
+			["mobhdone"] = 0,
+			["last_action"] = 1482289668,
+			["mobdone"] = 0,
+		}, -- [1]
+	},
+}

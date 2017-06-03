@@ -1,0 +1,49 @@
+tag 1213fc16b3a7ec90e6222d273a26969d34c76756 2.3.7
+Author:	Benjamin Staneck <staneck@gmail.com>
+Date:	Thu Mar 23 23:14:49 2017 +0100
+
+commit 16caf096b1a566d2ccc875b080a88203bf1deed2
+Author: Infus <infus@squorn.de>
+Date:   Thu Mar 23 21:54:35 2017 +0100
+
+    Fix templates for some monk abilities
+
+commit 99ddf9759677c027f0a29d6739bc78bb930478b3
+Author: Infus <infus@squorn.de>
+Date:   Thu Mar 23 21:53:40 2017 +0100
+
+    Fix nil error in dynamic groups
+    
+    Ticket-Nr: 901
+
+commit 4343801f5061789bb95d38a1955cd0d3e1e9d556
+Author: Infus <infus@squorn.de>
+Date:   Tue Mar 21 23:23:10 2017 +0100
+
+    Give the glow_frame a initial size that matches its parent
+    
+    This should not matter, since we call SetAllPoints.
+    This was proposed by Alea on Discord.
+    
+    But it does, and somehow fixes:
+    
+    Ticket-Nr: 883
+
+commit 1404dd923bfea8063004ad4b024551f2b3f22914
+Author: Infus <infus@squorn.de>
+Date:   Tue Mar 21 23:11:01 2017 +0100
+
+    Add MKII Gyroscopic Stabilizer to the Legendaries list
+
+commit 85153aa7c138360587369259d0224aa834426480
+Author: Infus <infus@squorn.de>
+Date:   Tue Mar 21 22:51:49 2017 +0100
+
+    Cancel correct timer in swing code
+
+commit aafd176d27b1e7fba2068b8714fec2c09bb8d717
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Mon Mar 20 23:41:29 2017 +0100
+
+    GenericTrigger: consolidate Modernize() a bit and change a few comments.
+

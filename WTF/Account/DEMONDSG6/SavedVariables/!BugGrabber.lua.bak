@@ -1,0 +1,31 @@
+
+BugGrabberDB = {
+	["lastSanitation"] = 3,
+	["session"] = 1,
+	["errors"] = {
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'TellMeWhen' 尝试调用保护功能 'OverrideActionBarButton4:Show()'。",
+			["time"] = "2016/11/15 08:35:59",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Show'\nInterface\\FrameXML\\ActionButton.lua:330: in function <Interface\\FrameXML\\ActionButton.lua:304>\n[C]: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:665: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:174: in function <Interface\\FrameXML\\ActionButton.lua:171>",
+			["session"] = 1,
+			["counter"] = 1,
+		}, -- [1]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'whoaUnitFrames' 尝试调用保护功能 'PartyMemberFrame2PetFrame:Hide()'。",
+			["time"] = "2016/11/15 09:04:36",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\PartyMemberFrame.lua:179: in function `PartyMemberFrame_UpdatePet'\nInterface\\FrameXML\\PartyMemberFrame.lua:157: in function `PartyMemberFrame_UpdateMember'\nInterface\\FrameXML\\PartyMemberFrame.lua:365: in function `PartyMemberFrame_OnEvent'\n[string \"*:OnEvent\"]:1: in function `OnEvent'\nInterface\\FrameXML\\UnitFrame.lua:917: in function <Interface\\FrameXML\\UnitFrame.lua:915>",
+			["session"] = 1,
+			["counter"] = 1,
+		}, -- [2]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'nMainbar' 尝试调用保护功能 '<unnamed>:Hide()'。",
+			["time"] = "2016/11/15 09:32:02",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:1230: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2809: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:436: in function <Interface\\FrameXML\\WorldMapFrame.lua:422>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:370: in function <Interface\\FrameXML\\WorldMapFrame.lua:349>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2374: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2176: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2086: in function <Interface\\FrameXML\\UIParent.lua:2082>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2868: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2852: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:261: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 1,
+			["counter"] = 1,
+		}, -- [3]
+	},
+}

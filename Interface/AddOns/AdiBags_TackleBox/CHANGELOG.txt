@@ -1,0 +1,53 @@
+AdiBags - Tackle Box v1.0.2 [5.25.2017]
+Adds filters and groupings for the Fishing profession to AdiBags.
+
+==========
+
+VERSION 1.0.2 (5.25.2017)
+
+• Added Ravenous Fly to Bait section.
+• Added new section for Catches.
+• Added filters for Trophy and Social Fish.
+• Added filters for Nat Pagle friendship reputation quests.
+• Added filters for Rare Fish introduced in Legion.
+
+==========
+
+VERSION 1.0.1 (4.22.2017)
+
+• Cosmetic changes to the options interface.
+• Tidied up item tables.
+
+==========
+
+VERSION 1.0 (4.20.2017)
+
+New Options
+
+• Options grouped into categories for ease-of-use.
+
+New Filters
+
+• Bait (Draenor and Broken Isles)
+• Dalaran Fountain Coins
+• Charms
+
+Corrected Filters
+
+• Nat's Lucky Coin is now in its own filter.
+• Toys separated into different filters for convention and ease-of-use.
+• Trinkets sorted into the proper category.
+• Hooks, Lures, and Lines now properly sorted.
+• Consumables filtered into two categories instead of one, based on use.
+
+New Items
+
+• Bladebone Hook
+• Hook of the Master Angler
+
+Updated Items
+
+• Corrected itemID for Staats' Fishing Pole.
+• Corrected itemID for Arcane Lure.
+• Corrected itemID for Worm Supreme.
+

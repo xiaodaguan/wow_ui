@@ -1,0 +1,11 @@
+
+TidyThreatOptions = {
+	["Visible"] = false,
+	["AllowMove"] = true,
+	["HideOutOfCombat"] = true,
+	["Skin"] = 1,
+	["Scale"] = 1,
+	["PlayAlertSound"] = true,
+	["ThreatLeadScale"] = 68,
+	["ShowDetailWindow"] = true,
+}

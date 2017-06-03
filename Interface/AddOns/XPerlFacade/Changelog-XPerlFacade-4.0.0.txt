@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r25 | cybeloras | 2015-01-12 05:42:27 +0000 (Mon, 12 Jan 2015) | 1 line
+Changed paths:
+   A /tags/4.0.0 (from /trunk:24)
+
+Tagging as 4.0.0
+------------------------------------------------------------------------
+r24 | cybeloras | 2014-12-18 23:00:15 +0000 (Thu, 18 Dec 2014) | 1 line
+Changed paths:
+   M /trunk/XPerlFacade.lua
+   M /trunk/XPerlFacade.toc
+
+Updated to work with Z-Perl
+------------------------------------------------------------------------

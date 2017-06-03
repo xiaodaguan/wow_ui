@@ -1,0 +1,17 @@
+## Interface: 70000
+## Title: StatBlock_Money
+## Notes: A money data broker plugin.
+## Author: Funkydude
+## X-Category: Inventory
+## X-Credits: sb
+## X-Curse-Packaged-Version: r48-release
+## X-Curse-Project-Name: StatBlock_Money
+## X-Curse-Project-ID: stat-block_money
+## X-Curse-Repository-ID: wow/stat-block_money/mainline
+
+LibStub.lua
+CallbackHandler-1.0.lua
+LibDataBroker-1.1.lua
+
+StatBlock_Money.lua
+

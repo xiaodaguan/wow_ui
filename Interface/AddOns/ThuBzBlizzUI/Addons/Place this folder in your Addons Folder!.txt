@@ -1,0 +1,5 @@
+These files go into your addons folder!
+For example: C:\Program Files (x86)\World of Warcraft\Interface\AddOns
+
+xoxo
+Thubz

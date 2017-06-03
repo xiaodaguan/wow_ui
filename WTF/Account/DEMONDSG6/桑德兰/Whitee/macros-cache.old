@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "大" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 野性守护
+/use 狂野怒火
+END

@@ -1,0 +1,10 @@
+
+TinyChatDB = {
+	["HideDockManager"] = false,
+	["HideSwitchBackdrop"] = false,
+	["HideSwitch"] = false,
+	["FirstWord"] = true,
+	["EditBoxPos"] = "TOP",
+}
+TinyChatLevelDB = {
+}

@@ -1,0 +1,6 @@
+commit efd7318ecaeabb06a6616b5d4f43c59171ff3fad
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Mon Apr 3 00:46:18 2017 +0200
+
+    7.2 toc update
+

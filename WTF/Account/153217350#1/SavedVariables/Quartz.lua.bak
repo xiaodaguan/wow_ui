@@ -1,0 +1,38 @@
+
+Quartz3DB = {
+	["namespaces"] = {
+		["Swing"] = {
+		},
+		["Buff"] = {
+		},
+		["Interrupt"] = {
+		},
+		["Flight"] = {
+		},
+		["Pet"] = {
+		},
+		["EnemyCasts"] = {
+		},
+		["Player"] = {
+		},
+		["GCD"] = {
+		},
+		["Focus"] = {
+		},
+		["Target"] = {
+		},
+		["Range"] = {
+		},
+		["Mirror"] = {
+		},
+		["Latency"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Ceshiaabb - 霜之哀伤"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

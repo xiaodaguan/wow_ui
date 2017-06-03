@@ -1,0 +1,69 @@
+
+TEST_CONFIG = nil
+XIVBarDB = {
+	["char"] = {
+		["Wrio - 桑德兰"] = {
+			["portItem"] = {
+				["text"] = "达拉然",
+				["portId"] = 140192,
+			},
+		},
+	},
+	["profiles"] = {
+		["Wrio - 桑德兰"] = {
+			["modules"] = {
+				["talent"] = {
+					["minWidth"] = 70,
+					["barCC"] = true,
+				},
+				["system"] = {
+					["enabled"] = false,
+					["addonsToShow"] = 5,
+				},
+				["currency"] = {
+					["currencyThree"] = "1342",
+					["currencyTwo"] = "1226",
+					["currencyOne"] = "1220",
+				},
+				["gold"] = {
+					["shortThousands"] = true,
+				},
+			},
+			["text"] = {
+				["flags"] = 3,
+				["font"] = "聊天",
+			},
+			["general"] = {
+				["barPadding"] = 1,
+				["barPosition"] = "TOP",
+				["moduleSpacing"] = 40,
+				["ohHide"] = true,
+			},
+			["color"] = {
+				["normal"] = {
+					["a"] = 1,
+					["b"] = 1,
+					["g"] = 0.968627450980392,
+					["r"] = 0.996078431372549,
+				},
+				["barColor"] = {
+					["a"] = 0.804796040058136,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Wrio - 桑德兰"] = "Wrio - 桑德兰",
+	},
+	["factionrealm"] = {
+		["Alliance - 桑德兰"] = {
+			["Wrio"] = {
+				["currentMoney"] = 5732999577,
+				["sessionMoney"] = 8443120,
+			},
+		},
+	},
+}

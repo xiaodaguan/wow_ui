@@ -1,0 +1,16 @@
+SexyInterrupter: disabled
+StatBlockCore: disabled
+TellMeWhen: disabled
+SimpleComboPoints: disabled
+RotationBuilder: disabled
+IceHUD: disabled
+StatBlock_DPS: disabled
+StatBlock_Durability: enabled
+StatBlock_MeleeStats: enabled
+StatBlock_ZoneText: disabled
+TalentSetManager: disabled
+ExRT: disabled
+InspectItemLevel: disabled
+OPie: disabled
+RangeDisplay: disabled
+TidyThreat: disabled

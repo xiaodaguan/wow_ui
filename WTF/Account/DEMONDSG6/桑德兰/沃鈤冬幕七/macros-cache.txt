@@ -1,0 +1,8 @@
+VER 3 0100000000000001 "DB_Frosty" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click DB_Frosty
+END
+VER 3 0100000000000002 "DB_Ichthys_Frosty" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click DB_Ichthys_Frosty
+END

@@ -1,0 +1,91 @@
+
+ItemSourceDB = {
+}
+ObjectLocationDB = {
+}
+CreatureLocationDB = {
+}
+CreatureDB = {
+}
+QuestDB = {
+}
+QuestCompleteDB = {
+}
+QuestEventDB = {
+}
+SkillSourceDB = {
+}
+BigFootBot_Version = {
+}
+BigFootBot_Info = nil
+PlayersDB = {
+	["刹卡罗之影:桑德兰"] = {
+		["race"] = 11,
+		["name"] = "刹卡罗之影",
+		["guild"] = "The Vanguard",
+		["level"] = 110,
+		["gender"] = 2,
+		["class"] = 4,
+		["server"] = "桑德兰",
+	},
+	["Harmon:桑德兰"] = {
+		["race"] = 7,
+		["name"] = "Harmon",
+		["guild"] = "紫墨",
+		["level"] = 110,
+		["gender"] = 3,
+		["class"] = 10,
+		["server"] = "桑德兰",
+	},
+	["Wrio:桑德兰"] = {
+		["race"] = 6,
+		["name"] = "Wrio",
+		["guild"] = "大银哥",
+		["level"] = 110,
+		["gender"] = 3,
+		["class"] = 5,
+		["server"] = "桑德兰",
+	},
+	["杀手不太暖:桑德兰"] = {
+		["race"] = 6,
+		["name"] = "杀手不太暖",
+		["guild"] = "崭露",
+		["level"] = 110,
+		["gender"] = 3,
+		["class"] = 9,
+		["server"] = "桑德兰",
+	},
+	["歐皇:桑德兰"] = {
+		["race"] = 7,
+		["name"] = "歐皇",
+		["guild"] = "Eternal Starlight",
+		["level"] = 110,
+		["gender"] = 3,
+		["class"] = 4,
+		["server"] = "桑德兰",
+	},
+}
+UtilDB = {
+}
+NPCMarkCollectionDB = {
+}
+BigFootBot_collectData = {
+	["CombatBattlePetData"] = {
+	},
+	["BigFootBank_Data"] = {
+	},
+	["WildBattlePetData"] = {
+	},
+}
+SpamChatDB = {
+	[1480074551] = {
+		["name"] = "一曲诀莂情",
+		["content"] = "世界BOSS 来的M 快满了。",
+	},
+	[1480074242] = {
+		["name"] = "身后的第三人",
+		["content"] = "666",
+	},
+	["factionGroup"] = "Alliance",
+	["realm"] = "桑德兰",
+}

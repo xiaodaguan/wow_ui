@@ -1,0 +1,10 @@
+lightweight tag f76068b7e84bbc15210ce7a02ba80f5d55b01f69 v1.8-release
+Author:	apnotix <apnotix2007@hotmail.de>
+Date:	Sat Apr 1 08:38:43 2017 +0200
+
+commit f76068b7e84bbc15210ce7a02ba80f5d55b01f69
+Author: apnotix <apnotix2007@hotmail.de>
+Date:   Sat Apr 1 08:38:43 2017 +0200
+
+    Update to 7.2 - no-lib-strip
+

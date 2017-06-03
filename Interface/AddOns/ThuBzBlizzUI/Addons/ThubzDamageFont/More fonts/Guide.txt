@@ -1,0 +1,9 @@
+Hey guys,
+
+To change the current font to any of the extra fonts i did add or any you download from www.dafont.com
+simply go to "ThubzDamageFont.lua" and in the text there you change "thubzfont.ttf" to the new font name
+This has to be a .TTF if its .OTF just rename it to .TTF, another way to change this wich might be easier for some
+is to change the font name u take to thubzfont.ttf and replace the old one in the addon folder.
+
+xoxo
+thubz

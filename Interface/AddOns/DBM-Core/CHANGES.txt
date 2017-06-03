@@ -1,0 +1,108 @@
+Changes since tag 7.2.7
+
+commit 394516cbfb7009c7852ff669319d8d62f6657962
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Jun 2 00:26:02 2017 +0200
+
+    Omega via svn r16258:
+    Disable taskmaster on Harjatan, that mechanic seems to be removed from game, or at very least removed from journal
+    add combat message to KJ
+
+commit c32c4aca961175fdb14133ce8b0b0e8e700f74d1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jun 1 04:52:57 2017 +0200
+
+    Omega via svn r16257:
+    Add some more singularity IDs that can cause missing timers
+
+commit ca0276cdeda3da058124c019ecc82b2468c56d27
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 31 06:58:28 2017 +0200
+
+    Omega via svn r16256:
+    Kill redundant timer on Etraeus, don?\226?\128?\153t need timer for grav pull an thing, especially since thing pops out early if tank dies.
+    Changed yells and timers on guldan to use shorter text names for bonds of fel and storm of destroyer
+    Fixed timer bug for carrion nightmare on tichondrius which was showing ?\226?\128?\156unknown?\226?\128?\157 instead of a number for count.
+
+commit aeb60b19e2dd17a0d9177d93238259165043c627
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 31 06:25:13 2017 +0200
+
+    Omega via svn r16255:
+    added taunt warning to burst if burst is applied to tank currently on elisande
+    Tweaked timing on add count for voice pack on phase3 guldan
+    added missing run out warning to this weeks trash world quest.
+
+commit 2cca6f686234ad4ee992a2e40a50c8706d851d73
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue May 30 20:59:25 2017 +0200
+
+    Omega via svn r16254:
+    Fix lua error on Maiden of Vigilance
+
+commit 28d001cdd2d1cd5c1928e38fc9b53689465020ab
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat May 27 04:12:39 2017 +0200
+
+    Omega via svn r16253:
+    Update heroic Anomaly data
+
+commit a3d443c7ef5ce56fe4914a97755d8319eab18e5d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat May 27 01:58:03 2017 +0200
+
+    Omega via svn r16252:
+    Comment updates, and update one timer from todays mythic testing
+
+commit 6c59569d369aa5bf9b07698d73593dfe9d9d2b76
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri May 26 01:18:14 2017 +0200
+
+    Omega via svn r16251:
+    some timer updates from todays mythic testing
+
+commit 94f0c77e467f586d3b3a3992f65c5eddd74a00ac
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 25 07:34:07 2017 +0200
+
+    Omega via svn r16250:
+    Fix orb
+
+commit ed69385cdddcb6162944e1679c03bb2c26a12f4c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu May 25 05:55:10 2017 +0200
+
+    Omega via svn r16249:
+    Fix run to edge voice playing for everyone
+    Change run to edge to ranged DPS only warning
+    Add audio count to add spawns in phase 3 guldan voice pack
+
+commit 03c3be8d8c947878041e57c869c6d595ceb3fa47
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 24 23:58:33 2017 +0200
+
+    Omega via svn r16248:
+    Couple tweaks
+
+commit 20e311a874a63ea3030b0b1fdab0e49bb737ef84
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 24 20:43:57 2017 +0200
+
+    Omega via svn r16247:
+    Add other timewalking difficulty index
+
+commit 40885ebbc5061d1de1dc258b9d0cad5d149308b8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 24 11:03:29 2017 +0200
+
+    Omega via svn r16246:
+    remove a bad radar/hud message that should have been removed in patch 7.1, how did no one report this. :o
+    Change voice used by call of night
+
+commit 34016ef39fa9203f727f15f446667bd984abcb44
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue May 23 22:02:21 2017 +0200
+
+    tandanu via svn r16245:
+    increment alpha version
+

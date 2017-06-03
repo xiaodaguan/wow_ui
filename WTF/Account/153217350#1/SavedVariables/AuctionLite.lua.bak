@@ -1,0 +1,10 @@
+
+AuctionLiteDB = {
+	["profileKeys"] = {
+		["Ceshiaabb - 霜之哀伤"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

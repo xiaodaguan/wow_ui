@@ -1,0 +1,51 @@
+## Interface: 70200
+## Title: RotationBuilder
+## Version: 1.67.0
+## Author: Previous : Soulwhip, Current : Pelerinage, Tylorcaptain
+## Notes: Builds rotations for any class or spec
+## SavedVariablesPerCharacter: ROB_Options ROB_Rotations ROB_Exports
+
+-- Library
+libs\Ace-3.0\LibStub\LibStub.lua
+libs\Ace-3.0\AceLocale-3.0\AceLocale-3.0.lua
+libs\Ace-3.0\AceSerializer-3.0\AceSerializer-3.0.lua
+
+-- Localization
+localization\enUS.lua
+localization\zhCN.lua
+localization\frFR.lua
+localization\deDE.lua
+localization\koKR.lua
+localization\zhTW.lua
+localization\ruRU.lua
+localization\esES.lua
+localization\esMX.lua
+localization\itIT.lua
+localization\ptBR.lua
+
+-- Core
+RBConstants.lua
+utils\RotationBuilderUtils.lua
+Core.lua
+utils\ImportExportUtils.lua
+
+-- Default Rotations
+rotations\DefaultRogueRotations.lua
+rotations\DefaultDruidRotations.lua
+rotations\DefaultMonkRotations.lua
+rotations\DefaultShamanRotations.lua
+rotations\DefaultHunterRotations.lua
+rotations\DefaultPriestRotations.lua
+rotations\DefaultDeathKnightRotations.lua
+rotations\DefaultMageRotations.lua
+rotations\DefaultPaladinRotations.lua
+rotations\DefaultWarlockRotations.lua
+rotations\DefaultWarriorRotations.lua
+rotations\DefaultDemonHunterRotations.lua
+
+-- Rotation Builder
+RotationBuilder.lua
+debug.lua
+
+-- Interface
+RotationBuilder.xml

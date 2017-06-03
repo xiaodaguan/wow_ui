@@ -1,0 +1,60 @@
+
+Quartz3DB = {
+	["namespaces"] = {
+		["Swing"] = {
+		},
+		["Buff"] = {
+		},
+		["Interrupt"] = {
+		},
+		["Flight"] = {
+		},
+		["Pet"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 1294.84094238281,
+				},
+			},
+		},
+		["Player"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 1269.84094238281,
+				},
+			},
+		},
+		["Mirror"] = {
+		},
+		["EnemyCasts"] = {
+		},
+		["GCD"] = {
+		},
+		["Focus"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 1294.84094238281,
+				},
+			},
+		},
+		["School"] = {
+		},
+		["Range"] = {
+		},
+		["Target"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 1294.84094238281,
+				},
+			},
+		},
+		["Latency"] = {
+		},
+	},
+	["profileKeys"] = {
+		["柒年 - 桑德兰"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

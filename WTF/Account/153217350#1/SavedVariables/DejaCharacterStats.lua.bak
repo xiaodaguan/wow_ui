@@ -1,0 +1,42 @@
+
+DejaCharacterStatsDB = {
+	["gdbdefaults"] = {
+		["dejacharacterstatsShowAverageRepairChecked"] = {
+			["ShowAverageRepairSetChecked"] = false,
+		},
+		["dejacharacterstatsShowDuraChecked"] = {
+			["ShowDuraSetChecked"] = false,
+		},
+		["dejacharacterstatsShowItemRepairChecked"] = {
+			["ShowItemRepairSetChecked"] = false,
+		},
+		["DCS_TableRelevantStatsChecked"] = {
+			["RelevantStatsSetChecked"] = false,
+		},
+		["dejacharacterstatsShowDuraTextureChecked"] = {
+			["ShowDuraTextureSetChecked"] = true,
+		},
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
+		},
+		["dejacharacterstatsClassBackgroundChecked"] = {
+			["ClassBackgroundChecked"] = true,
+		},
+		["dejacharacterstatsItemLevelChecked"] = {
+			["ItemLevelTwoDecimalsSetChecked"] = true,
+			["ItemLevelEQ_AV_SetChecked"] = true,
+			["ItemLevelDecimalsSetChecked"] = false,
+		},
+		["dejacharacterstatsExpandChecked"] = {
+			["ExpandSetChecked"] = true,
+		},
+		["dejacharacterstatsShowDecimalsChecked"] = {
+			["SetChecked"] = true,
+		},
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
+		},
+	},
+}
+DCS_ClassSpecDB = {
+}

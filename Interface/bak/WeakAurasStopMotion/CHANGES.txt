@@ -1,0 +1,12 @@
+tag a75a847e29a920a2f77fe9b1109218636707e885 0.7
+Author:	Infus <infus@squorn.de>
+Date:	Fri Dec 23 20:25:19 2016 +0100
+
+Tagging as 0.7
+
+commit fff66ed0ac0fc6a2e95753c62e24c2f5f2d4d5ed
+Author: Infus <infus@squorn.de>
+Date:   Fri Dec 23 20:22:56 2016 +0100
+
+    Prepare for anchor frame feature
+

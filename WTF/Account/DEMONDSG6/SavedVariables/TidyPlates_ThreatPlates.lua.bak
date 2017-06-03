@@ -1,0 +1,2 @@
+
+ThreatPlatesDB = nil

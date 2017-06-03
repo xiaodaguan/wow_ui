@@ -1,0 +1,28 @@
+lightweight tag baf5bf277cc144ff0ab06d0d91d4a4e7983c517b v3.0.6
+Author:	Vsevolod Klementjev <vsevolod@klemix.com>
+Date:	Thu May 4 12:05:19 2017 +0300
+
+commit baf5bf277cc144ff0ab06d0d91d4a4e7983c517b
+Author: Vsevolod Klementjev <vsevolod@klemix.com>
+Date:   Thu May 4 12:05:19 2017 +0300
+
+    * Bumped version to 3.0.6
+
+commit f3608eaac2895e7c25ae78525eea9a9f7f28a5d2
+Author: Vsevolod Klementjev <vsevolod@klemix.com>
+Date:   Thu May 4 12:04:02 2017 +0300
+
+    * Safety measure against recursion during inspect
+
+commit 22e20b85afbe26da526917675bd4adad6ba12c39
+Author: Vsevolod Klementjev <vsevolod@klemix.com>
+Date:   Thu May 4 12:03:12 2017 +0300
+
+    * Safety measure against recursion during inspect
+
+commit 7b740c49b8fe6dd0757f1440b930225a434cc824
+Author: Vsevolod Klementjev <vsevolod@klemix.com>
+Date:   Thu May 4 11:39:16 2017 +0300
+
+    * Updating database bar is now movable
+

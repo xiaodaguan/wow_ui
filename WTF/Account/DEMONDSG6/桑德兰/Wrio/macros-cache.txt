@@ -1,0 +1,83 @@
+VER 3 010000000000002E "1" "INV_MISC_QUESTIONMARK"
+/f 塞巴斯汀安
+END
+VER 3 0100000000000026 "伏击" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=2 消失,伏击
+END
+VER 3 0100000000000013 "伏击" "INV_MISC_QUESTIONMARK"
+#showtooltips 伏击
+/cast [stealth]搜索
+/cast [stealth]伏击
+END
+VER 3 0100000000000001 "偷袭" "INV_MISC_QUESTIONMARK"
+#show 偷袭
+/cast 搜索
+/cast 偷袭
+END
+VER 3 0100000000000017 "军刀" "INV_MISC_QUESTIONMARK"
+#showtooltip 军刀猛刺
+/castsequence reset=0.75 军刀猛刺,x
+END
+VER 3 010000000000002C "割裂" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=2 消失,割裂
+END
+VER 3 0100000000000004 "嫁祸" "INV_MISC_QUESTIONMARK"
+#showtooltip 嫁祸诀窍
+/cast [target=focus,exists]嫁祸诀窍;[target=targettarget]嫁祸诀窍
+/stopmacro [target=focus,exists]
+/focus [target=targettarget]
+END
+VER 3 010000000000002A "宿敌" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=1.5 宿敌,消失,君王之灾,割裂
+END
+VER 3 010000000000001F "手枪" "INV_MISC_QUESTIONMARK"
+/castsequence reset=0.75 手枪射击,x
+END
+VER 3 0100000000000025 "披风" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 15
+END
+VER 3 010000000000001E "死标天降" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/targetenemy [dead][noharm]
+/use  [talent:7/2][@mouseover,nohelp,exists]死亡标记;  [talent:7/2]死亡标记;  [talent:7/3] 天降杀机
+END
+VER 3 0100000000000003 "潜凿" "INV_MISC_QUESTIONMARK"
+#showtooltip  [nocombat]潜行;[combat]凿击
+/cast [combat]凿击
+/startattack [combat]
+/cast [nocombat]!潜行
+END
+VER 3 010000000000002D "盲焦" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [@focus]致盲
+END
+VER 3 010000000000001D "神器军刀" "INV_MISC_QUESTIONMARK"
+/cast 恐惧之刃诅咒(神器)
+/cast 冲动
+/cast 军刀猛刺
+END
+VER 3 0100000000000024 "穿刺" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=0.75 穿刺,x
+END
+VER 3 0100000000000006 "腰" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast 6
+END
+VER 3 010000000000002B "钩" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use [@cursor,talent:2/1]抓钩;侦测
+END
+VER 3 0100000000000005 "闷棍" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/console Sound_EnableSFX 0
+/cleartarget [stealth]
+/targetenemy [stealth]
+/cast [nostealth,nocombat]!潜行;[mod:shift,@focus,nohelp,exists][@mouseover,nohelp,exists][]闷棍
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+END

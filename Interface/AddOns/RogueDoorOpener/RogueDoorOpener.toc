@@ -1,0 +1,9 @@
+## Interface: 70200
+## Title: Rogue Door Opener
+## Author: Burzolog (@Burzolog on Twitter)
+## Version: 7.2.0
+## Notes: Save a click when you enter the Rogue Order Hall
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+RogueDoorOpener.lua

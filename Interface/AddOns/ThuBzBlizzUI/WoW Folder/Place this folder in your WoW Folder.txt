@@ -1,0 +1,5 @@
+This goes in mainfile of WoW install not in interface or addons!
+for example: C:\Program Files (x86)\World of Warcraft
+
+xoxo
+Thubz

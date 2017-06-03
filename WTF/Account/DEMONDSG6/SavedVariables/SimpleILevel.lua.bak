@@ -1,0 +1,22 @@
+
+SIL_Settings = {
+	["global"] = {
+		["version"] = 3,
+	},
+	["profileKeys"] = {
+		["Wrio - 桑德兰"] = "Default",
+	},
+}
+SIL_CacheGUID = {
+	["Player-833-02BF46C3"] = {
+		["score"] = 878.0625,
+		["class"] = "ROGUE",
+		["items"] = 16,
+		["resil"] = 0,
+		["name"] = "Wrio",
+		["target"] = "player",
+		["level"] = 110,
+		["time"] = 1484313621,
+		["realm"] = "桑德兰",
+	},
+}

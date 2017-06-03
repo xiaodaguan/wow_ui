@@ -1,0 +1,53 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("SexyInterrupter", "deDE", false)
+if not L then return end
+
+L["Addon name"] = "SexyInterrupter";
+
+L["Assignments"] = "Zuweisungen";
+L["Bars"] = "Leisten";
+L["Bar color"] = "Leistenfarbe";
+L["Background"] = "Hintergrund";
+L["Background color"] = "Hintergrundfarbe";
+L["Border"] = "Rahmen";
+L["Border color"] = "Rahmenfarbe";
+L["Flash display"] = "Fensteranimation anzeigen";
+L["Frame locked"] = "Fenster gesperrt";
+L["Frame unlocked"] = "Fenster entsperrt";
+L["Font"] = "Schrift";
+L["Font art"] = "Schriftart";
+L["Font size"] = "Schriftgröße";
+L["Font color"] = "Schriftfarbe";
+L["General"] = "Allgemein";
+L["Invalid Spell Name/ID/Link"] = "Ungültiger Zaubername/ID/Link";
+L["Show in combat only"] = "Nur im Kampf anzeigen";
+L["Lock window"] = "Fenster sperren";
+L["Look"] = "Aussehen";
+L["Interrupted"] = "Unterbrochen";
+L["Interrupts"] = "Unterbrechungen";
+L["Interrupt now"] = "Unterbrich jetzt";
+L["Left click to toggle Frame"] = "Linksklick: Sperrt/entsperrt die Frames";
+L["Max rows of interrupters"] = "Anzahl maximaler Zeilen von Interruptern";
+L["Name"] = "Name";
+L["Notification"] = "Benachrichtung";
+L["New Update"] = "Neues Update";
+L["Ouput channel"] = "Ausgabe";
+L["Only the group leader can override the priority"] = "Nur der Gruppenleiter kann die Prioritäten überschreiben";
+L["Override priority"] = "Priorität überschreiben";
+L['Priority assignment'] = "Prioritätenzuweisung";
+L["Right click to open settings"] = "Rechtsklick: Öffnet die Einstellungen";
+L["Show message"] = "Nachricht anzeigen";
+L["Show chat message"] = "Chatmeldung ausgeben";
+L["Show class icon"] = "Klassenicon anzeigen";
+L["Statusbar"] = "Statusbar";
+L["Spell"] = "Zauber";
+L["Spell assignment"] = "Zauberzuweisung";
+L["An update is available v"] = "Es ist eine neue Version verfügbar v";
+L["Please update to the latest version!"] = "Bitte aktualisiere dein Addon!";
+L["Player"] = "Spieler";
+L["Priority"] = "Priorität";
+L["Play sound"] = "Sound abspielen";
+L["Window"] = "Fenster";
+
+L["Lock this bar to prevent resizing or moving"] = "Verhindert das bewegen oder vergrößern des Fensters";
+L["Spell assignment to the player"] = "Zauberzuweisung für diesen Spieler";
+L["Overwrite the predefined priority (1-3)"] = "Überschreibt die vordefinierte Priorität (1-3)";

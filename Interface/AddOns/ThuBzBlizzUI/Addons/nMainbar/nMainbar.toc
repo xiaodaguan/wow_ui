@@ -1,0 +1,31 @@
+## Interface: 70100
+
+## Title: ThuBzUI nMainbar
+## Notes: Yet another Blizzbar mod (ThuBzBlizzUI Version)
+## SavedVariables: BagsShown
+
+config.lua
+config_custom.lua
+Bindings.xml
+
+modules\core.lua
+modules\bottomLeft.lua
+modules\bottomRight.lua
+modules\left.lua
+modules\right.lua
+modules\skins.lua
+modules\expbar.lua
+modules\hotkey.lua
+modules\petbar.lua
+modules\possessbar.lua
+modules\repbar.lua
+modules\stancebar.lua
+modules\mouseover.lua
+modules\slash.lua
+modules\picomenu.lua
+modules\artifactBar.lua
+modules\honorbar.lua
+
+modules\short\short.lua
+modules\short\extras.lua
+modules\short\bags.lua

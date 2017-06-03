@@ -1,0 +1,6 @@
+VER 3 0100000000000001 "bb" "538563"
+/run for i=1,3 do local P=C_PetBattles.GetBreedQuality(2,i)print("第"..i.."只:"..ITEM_QUALITY_COLORS[P-1].hex.._G["BATTLE_PET_BREED_QUALITY"..P])end;
+END
+VER 3 0100000000000002 "目标" "INV_ENCHANT_SHARDBRILLIANTSMALL"
+/targer 暴掠龙女王
+END

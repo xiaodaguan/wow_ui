@@ -1,0 +1,30 @@
+## Interface: 70200
+## Title: Macro Toolkit - Macro Box
+## Notes: Predefined macros, compatible with Macro Toolkit
+## Author: Deepac
+## Version: v7.2.0.0
+## SavedVariables: MacroBoxDB
+## OptionalDeps: ElvUI, Ace3, MacroToolkit
+## X-Category: Action Bars
+## X-Website: http://wow.curse.com/downloads/wow-addons/details/Macro-Box.aspx
+## X-Donate: https://www.paypal.com/cgi-bin/webscr?return=http%3A%2F%2Fwow.curseforge.com%2Faddons%2FMacro-Box%2F&cn=Add+special+instructions+to+the+addon+author%28s%29&business=agoakley%40googlemail.com&bn=PP-DonationsBF%3Abtn_donateCC_LG.gif%3ANonHosted&cancel_return=http%3A%2F%2Fwow.curseforge.com%2Faddons%2FMacro-Box%2F&lc=US&item_name=Macro-Box+%28from+CurseForge.com%29&cmd=_donations&rm=1&no_shipping=1&currency_code=USD
+## X-Localizations: enUS, deDE, frFR, zhTW, zhCN, koKR, ruRU, esES, esMX, itIT, ptBR
+## X-Compatible-With: 70200
+## X-Curse-Packaged-Version: v7.2.0.0
+## X-Curse-Project-Name: Macro-Box
+## X-Curse-Project-ID: Macro-Box
+## X-Curse-Repository-ID: wow/macro-box/mainline
+
+#@no-lib-strip@
+# Libraries
+embeds.xml
+#@end-no-lib-strip@
+
+locales\locales.xml
+modules\package.lua
+modules\initialise.lua
+modules\options.lua
+modules\interface.lua
+modules\elvskin.lua
+
+MacroBox.lua

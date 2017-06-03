@@ -1,0 +1,8 @@
+## Interface: 70200
+## Title: Simple Combo Points
+## Notes: A simple and basic combo point display.
+## SavedVariables: SimpleComboPointsDB
+## Author: Sildor
+## Version: 1.6e
+
+scp.lua

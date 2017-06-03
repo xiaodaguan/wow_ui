@@ -1,0 +1,38 @@
+lightweight tag 5a879bb1177cce016d892169684079dac03ed646 v1.10
+Author:	GitHub <noreply@github.com>
+Date:	Sun Apr 23 14:24:15 2017 -0400
+
+commit 5a879bb1177cce016d892169684079dac03ed646
+Author: mynian <mynian@gmail.com>
+Date:   Sun Apr 23 14:24:15 2017 -0400
+
+    Update ConvertRatings.toc
+
+commit 97742338eb6a371cbc8219db291ee4317691be56
+Author: derickso <derickso@uci.edu>
+Date:   Fri Apr 21 03:17:33 2017 -0700
+
+    Real color now
+
+commit 97742338eb6a371cbc8219db291ee4317691be56
+Author: derickso <derickso@uci.edu>
+Date:   Fri Apr 21 03:17:33 2017 -0700
+
+    Real color now
+
+commit 97742338eb6a371cbc8219db291ee4317691be56
+Author: derickso <derickso@uci.edu>
+Date:   Fri Apr 21 03:17:33 2017 -0700
+
+    Real color now
+
+commit 241fdebc407c8158dc74cfa566a0ec6b55238c65
+Author: derickso <derickso@uci.edu>
+Date:   Fri Apr 21 03:05:10 2017 -0700
+
+    Update ConvertRatings.lua
+    
+    Change default to khaki or gold color instead of green, same as set bonus color
+    
+    Move percentages after secondary stat rating and change custom color scheme to only apply to percentages from mod
+

@@ -1,0 +1,8 @@
+## Interface: 70100
+## Title: ThuBzUI Damage Font
+## Author: ThuBz
+## Version: 1.1
+## Notes: Changes the font so something more fency, part of ThuBzBlizzUI.
+
+
+ThubzDamageFont.lua

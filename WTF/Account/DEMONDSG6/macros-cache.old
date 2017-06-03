@@ -1,0 +1,69 @@
+VER 3 0000000000000018 "1" "INV_MISC_QUESTIONMARK"
+/f 上杉丶絵梨衣
+END
+VER 3 0000000000000019 "1212" "INV_MISC_QUESTIONMARK"
+/F 争气小毛驴
+END
+VER 3 0000000000000013 "_" "INV_MISC_QUESTIONMARK"
+#showtooltip 暗影之舞
+/castsequence reset=0.7 暗影之舞,x
+/use 暗影打击
+END
+VER 3 0000000000000011 "BF_Mount" "132226"
+/bfmount
+END
+VER 3 0000000000000012 "BF_Pet" "236701"
+/BFPET
+END
+VER 3 000000000000000A "biaoji" "SPELL_MISC_PETHEAL"
+/script SetRaidTarget("mouseover",7)
+END
+VER 3 0000000000000017 "hs" "INV_MISC_QUESTIONMARK"
+/use 毁伤
+/use 11
+END
+VER 3 0000000000000006 "spec1" "ABILITY_ROGUE_DUALWEILD"
+/run SetSpecialization(1)
+END
+VER 3 0000000000000007 "spec2" "SPELL_SHADOW_SHADOWWORDDOMINATE"
+/run SetSpecialization(2)
+END
+VER 3 0000000000000010 "修复" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 凯帕树脂容器
+/use 古代树脂采集器
+/use 失效的声波信标
+/use 花粉采集器
+/use 英杰残骸
+/use 螳螂塑像
+/use 螳螂妖帝国旗帜
+/use 螳螂妖灯笼
+END
+VER 3 000000000000000C "偷看" "ABILITY_ROGUE_DEADLINESS"
+/focus mouseover
+/run if UnitExists("focus") then InspectUnit("focus") end
+END
+VER 3 0000000000000002 "动态视角关" "INV_MISC_QUESTIONMARK"
+/console ActionCam off
+END
+VER 3 0000000000000001 "动态视角开" "INV_MISC_QUESTIONMARK"
+/console ActionCam basic
+END
+VER 3 000000000000000E "开" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 一箱托维尔考古碎片
+END
+VER 3 0000000000000014 "暗刃" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 暗影之刃
+/use 暗影打击
+END
+VER 3 0000000000000015 "疾跑" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopattack
+/use 疾跑
+END
+VER 3 0000000000000016 "科技" "INV_JEWELRY_TRINKET_04"
+.item 16 64885
+.item 17 64885
+END

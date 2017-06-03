@@ -1,0 +1,14 @@
+﻿## Interface: 60000
+## Title: Masque Skinner: X/Z-Perl
+## Version: 4.0.0
+## Author: Cybeloras
+## Notes: Skins the X-Perl or Z-Perl aura frames with Masque
+## OptionalDeps: XPerl, ZPerl
+## RequiredDeps: Masque
+## X-Child-Of: XPerl, ZPerl
+## X-Curse-Packaged-Version: 4.0.0
+## X-Curse-Project-Name: Masque Skinner: X/Z-Perl
+## X-Curse-Project-ID: xperlfacade
+## X-Curse-Repository-ID: wow/xperlfacade/mainline
+
+XPerlFacade.lua

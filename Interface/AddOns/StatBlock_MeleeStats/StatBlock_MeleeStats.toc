@@ -1,0 +1,17 @@
+## Interface: 70000
+## Title: StatBlock_MeleeStats
+## Notes: Melee stats Data Broker plugin.
+## Author: Funkydude
+## X-Credits: p4aved, Silverstorm
+## X-Category: Interface Enhancements
+## X-Curse-Packaged-Version: r50-release
+## X-Curse-Project-Name: StatBlock_MeleeStats
+## X-Curse-Project-ID: stat-block_melee-stats
+## X-Curse-Repository-ID: wow/stat-block_melee-stats/mainline
+
+LibStub.lua
+CallbackHandler-1.0.lua
+LibDataBroker-1.1.lua
+
+StatBlock_MeleeStats.lua
+

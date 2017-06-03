@@ -1,0 +1,45 @@
+
+MSBTProfiles_SavedVars = {
+	["profiles"] = {
+		["Default"] = {
+			["critFontSize"] = 28,
+			["enableBlizzardDamage"] = true,
+			["enableBlizzardHealing"] = false,
+			["normalFontSize"] = 14,
+			["scrollAreas"] = {
+				["Outgoing"] = {
+					["stickyDirection"] = "Down",
+					["scrollHeight"] = 185,
+					["offsetX"] = 318,
+					["offsetY"] = -48,
+					["critFontName"] = "MSBT ARKai_C",
+					["normalFontName"] = "MSBT ARKai_C",
+				},
+				["Static"] = {
+					["offsetY"] = -181,
+					["disabled"] = true,
+					["offsetX"] = 229,
+				},
+				["Notification"] = {
+					["offsetY"] = 255,
+					["disabled"] = true,
+					["offsetX"] = -148,
+				},
+				["Incoming"] = {
+					["scrollHeight"] = 160,
+					["offsetX"] = 455,
+					["offsetY"] = -218,
+					["direction"] = "Up",
+					["disabled"] = true,
+				},
+			},
+			["creationVersion"] = "5.7.147",
+		},
+	},
+}
+MSBT_SavedMedia = {
+	["fonts"] = {
+	},
+	["sounds"] = {
+	},
+}

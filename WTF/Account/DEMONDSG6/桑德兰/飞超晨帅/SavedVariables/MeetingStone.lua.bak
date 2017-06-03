@@ -1,0 +1,24 @@
+
+MEETINGSTONE_CHARACTER_DB = {
+	["profileKeys"] = {
+		["飞超晨帅 - 桑德兰"] = "飞超晨帅 - 桑德兰",
+	},
+	["profiles"] = {
+		["飞超晨帅 - 桑德兰"] = {
+			["chatGroupListening"] = {
+				["APP_WHISPER"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					nil, -- [4]
+					false, -- [5]
+					false, -- [6]
+					false, -- [7]
+					false, -- [8]
+					false, -- [9]
+					false, -- [10]
+				},
+			},
+		},
+	},
+}
